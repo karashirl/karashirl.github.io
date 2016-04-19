@@ -86,7 +86,6 @@ p {
 #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
     position: absolute;
     height: 700px;
-    max-height: 700px;
     width: 50%;
     float: left;
     background-color: white;
@@ -153,6 +152,7 @@ p {
         transition: all 0s;
     }
     .detail {
+    text-shadow: 2px 2px #000;
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
     }

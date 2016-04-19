@@ -60,6 +60,7 @@ function imgZoom(contLow) {
                 break;
         }
         }
+        window.scrollTo(0,0);
         }        
 }
 

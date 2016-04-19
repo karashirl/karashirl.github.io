@@ -84,7 +84,6 @@ p {
     position: relative;
 }
 #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
-    overflow: hidden;
     position: absolute;
     height: 700px;
     max-height: 700px;
@@ -153,39 +152,9 @@ p {
     #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
         transition: all 0s;
     }
-    .contHighDetail h1 {
-        font-size: 240%;
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-    #header nav {
-        display: block;
-        float: none;
-        text-align: center;
-        margin-top: -1px;
-    }
-    #header nav a {
-        line-height: 8px;
-    }
-    #logo {
-        float: none;
-        display: block;
-        margin: 6px auto 0px auto;
-        position: relative;
-    }
-    #logo.smaller {
-        margin-top: 4px;
-        margin-bottom: 6px;
-    }
-    #header.smaller nav {
-        margin-top: -7px;
-        font-size: 90%;
-    }
-    #header.smaller nav a {
-        line-height: 8px;
-    }
-    .contText {
-        padding: 3% 5% 3% 5%;
+    .detail {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
     }
 }
 @media only screen and (max-width:410px) {
@@ -194,17 +163,5 @@ p {
     }
     .contTitle {
         font-size: 1em;
-    }
-}
-@media only screen and (max-width:390px) {
-    #header nav {
-        font-size: 88%;
-    }
-    #header nav a {
-        margin-left: 10px;
-    }
-    #header.smaller nav {
-        margin-top: -3px;
-        font-size: 88%;
     }
 }

@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+h2 {
+    margin: 20px 40px 20px 40px;
+    font-size: 200%;
+}
+h3 {
+    text-align: center;
+    font-size: 175%;
+}
+p {
+    margin: 20px 40px;
+    font-size: 1.25em;
+    line-height: 1.7em;
+}
+.container {  
+    max-width: 100%;
+}
+.contTitle {
+    background-color: #4d6480;
+    color: white;
+    padding: 0.8em;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#button {  
+    padding-top: 0.5em;
+    width: 100px;
+}
+
+#neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
+    display: table;
+    height: 500px;
+    width: 33.33%;
+    float: left;
+    opacity: 1;
+    -moz-transition: height .4s, opacity .4s;
+    -webkit-transition: height .4s, opacity .4s;
+    -ms-transition: height .4s, opacity .4s;
+    -o-transition: height .4s, opacity .4s;
+    transition: height .4s, opacity .4s;
+}
+
+#neighborhoodLarge {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#neighborhoodLargeOuter {
+    position: absolute;
+    float: left;
+    height: 500px;
+    width: 33.33%;
+    opacity: 0;
+    z-index: -1;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.detail {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+.detail h4 {
+    color: white;
+    font-size: 2em;
+}
+#hideRight0, #hideRight1, #hideRight2, #hideRight3, #hideRight4, #hideRight5 {
+    overflow: hidden;
+    position: relative;
+}
+#contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
+    overflow: hidden;
+    position: absolute;
+    height: 700px;
+    max-height: 700px;
+    width: 50%;
+    float: left;
+    background-color: white;
+    right: -50%;
+    z-index: -1;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.detail:hover {
+    text-shadow: 2px 2px #000;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+#bkgd0 {
+    background: url('images/patterson.jpg');
+    background-size: cover;
+}
+#bkgd1 {
+    background: url('images/mt_vernon.jpg');
+    background-size: cover;
+}
+#bkgd2 {
+    background: url('images/remington.jpg');
+    background-size: cover;
+}
+#bkgd3 {
+    background: url('images/fells.jpg');
+    background-size: cover;
+}
+#bkgd4 {
+    background: url('images/harbor_east.jpg');
+    background-size: cover;
+}
+#bkgd5 {
+    background: url('images/mt_wash.jpg');
+    background-size: cover;
+}
+
+@media only screen and (max-width:1300px) and (min-width:701px) {
+    #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1100px) {
+    #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+@media only screen and (max-width:700px) {
+    #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
+        width: 100%;
+        transition: all 0s;
+    }
+    #neighborhoodLargeOuter {
+        transition: all 0s;
+    }
+    #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
+        transition: all 0s;
+    }
+    .contHighDetail h1 {
+        font-size: 240%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    #header nav {
+        display: block;
+        float: none;
+        text-align: center;
+        margin-top: -1px;
+    }
+    #header nav a {
+        line-height: 8px;
+    }
+    #logo {
+        float: none;
+        display: block;
+        margin: 6px auto 0px auto;
+        position: relative;
+    }
+    #logo.smaller {
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+    #header.smaller nav {
+        margin-top: -7px;
+        font-size: 90%;
+    }
+    #header.smaller nav a {
+        line-height: 8px;
+    }
+    .contText {
+        padding: 3% 5% 3% 5%;
+    }
+}
+@media only screen and (max-width:410px) {
+    .detail h4 {
+        font-size: 1.75em;
+    }
+    .contTitle {
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width:390px) {
+    #header nav {
+        font-size: 88%;
+    }
+    #header nav a {
+        margin-left: 10px;
+    }
+    #header.smaller nav {
+        margin-top: -3px;
+        font-size: 88%;
+    }
+}

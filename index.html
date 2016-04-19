@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Kara Anderson - Front End Web Developer - Baltimore, MD</title>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+  <main>
+    <div class="container-fluid">
+    <div class="row">
+      <div id="header">
+        <img src="images/logo_main2.png" id="logo">
+        <a id="header_menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+          </a>
+        <nav>
+          <a href="default.asp">Home</a>
+          <a href="news.asp">Resume</a>
+          <a href="contact.asp">About</a>
+        </nav>
+    </div>
+    </div>
+      <div class="row">
+        <div class="mainImg">
+          <div class="textOverlay">
+            <h1>Kara Anderson</h1>
+            <p class="small">Front-End Web Developer</p>
+          </div>
+            <img class="centerImg" id="arrow" src="images/down_arrow.png" alt="down arrow">
+        </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="textBlock" style="text-align:center;">
+            <h2>Portfolio</h2>
+            <p class="large">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf. Prosciutto frankfurter pastrami, sausage short ribs biltong spare ribs alcatra bacon drumstick cow ball tip picanha. Porchetta chicken turducken kielbasa, prosciutto frankfurter t-bone. Pork chop leberkas capicola swine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+            <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of featured neighborhood project">
+            <div class="col-md-12">
+              <h3>Featured Neighborhood: Patterson Park</h3>
+              <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf. Prosciutto frankfurter pastrami, sausage short ribs biltong spare ribs alcatra bacon drumstick cow ball tip picanha. Porchetta chicken turducken kielbasa, prosciutto frankfurter t-bone. Pork chop leberkas capicola swine.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of online resume project">
+          <div class="col-md-12">
+            <h3>Online Resume</h3>
+            <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf. Prosciutto frankfurter pastrami, sausage short ribs biltong spare ribs alcatra bacon drumstick cow ball tip picanha. Porchetta chicken turducken kielbasa, prosciutto frankfurter t-bone. Pork chop leberkas capicola swine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of interactive neighborhood map project">
+          <div class="col-md-12">
+            <h3>Interactive Neighborhood Map (coming soon)</h3>
+            <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf. Prosciutto frankfurter pastrami, sausage short ribs biltong spare ribs alcatra bacon drumstick cow ball tip picanha. Porchetta chicken turducken kielbasa, prosciutto frankfurter t-bone. Pork chop leberkas capicola swine.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of health tracker project">
+          <div class="col-md-12">
+            <h3>Health Tracker (coming soon)</h3>
+            <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf. Prosciutto frankfurter pastrami, sausage short ribs biltong spare ribs alcatra bacon drumstick cow ball tip picanha. Porchetta chicken turducken kielbasa, prosciutto frankfurter t-bone. Pork chop leberkas capicola swine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" id="footer">
+        <div class="col-md-12">
+          <p>Follow me:</p>
+          <div>
+            <a href="https://github.com/karashirl" target="_blank"><img id="social_icons" src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><img id="social_icons" src="images/linkedin.png"></a>
+            <a href="https://twitter.com/karashirl" target="_blank"><img id="social_icons" src="images/twitter.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#header_menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
+</html>

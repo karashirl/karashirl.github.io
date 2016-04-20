@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Kara Anderson - Front End Web Developer - Baltimore, MD</title>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+  <main>
+    <div class="container-fluid">
+    <div class="row">
+      <div id="header">
+        <img src="images/logo_main2.png" id="logo">
+        <a id="header_menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+          </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="https://s3.amazonaws.com/accredible-profile-uploads/udacity/resumes/1460747098639" target="_blank">Resume</a>
+          <a href="index.html">About</a>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <div class="container resume-top">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="text-align: center">Resume</h1>
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-md-6">
+          <h2>PROFILE</h2>
+          <p>Motivated front-end web developer seeking an entry-level position with an innovative company that challenges its employees and offers opportunities for growth. Self-taught HTML, CSS and JavaScript and currently pursuing formal web development degree. Background in digital marketing, seeking a career change.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>CONTACT ME</h2>
+          <p>Email: karashirl@gmail.com</p>
+          <p>LinkedIn: linkedin.com/in/kanderson4</p>
+        </div>
+      </div>
+    </div>      
+    <div class="container-fluid">
+      <div class="row" id="footer">
+        <div class="col-md-12">
+          <p>Follow me:</p>
+          <div>
+            <a href="https://github.com/karashirl" target="_blank"><img id="social_icons" src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><img id="social_icons" src="images/linkedin.png"></a>
+            <a href="https://twitter.com/karashirl" target="_blank"><img id="social_icons" src="images/twitter.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#header_menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
+</html>

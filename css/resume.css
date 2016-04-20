@@ -18,12 +18,12 @@ body {
 }
 
 h1 {
-    font-size: 2.4em;
+    font-size: 1em;
     margin: 10px 0px;
 }
 
 h2 {
-    font-size: 2.2em;
+    font-size: 0.5em;
     margin: 20px 0px;
     font-weight: 700;
 }
@@ -45,11 +45,7 @@ p.large {
 p.small {
     font-size: 1.1em;
     line-height: 170%;
-}
-
-ul {
-    font-size: 1.3em;
-    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 /* NAVIGATION */
@@ -223,40 +219,17 @@ ul {
     transition: .6s -webkit-filter, .6s filter, .6s -moz-filter, .6s -ms-filter;
 }
 
-.resume { 
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.resume h3 { 
-    padding-top: 0.5em;
-}
-
-.resume h2 { 
+.resume-top { 
+    margin-top: 100px;
     text-align: center;
-    color: #4d5a80;
-}
-
-#headshot {
-    width: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 4em;
-}
-
-.container-color {
-    background-color: #f3efe0;
-    width: 100%;
-    padding-bottom: 2em;
 }
 
 @media screen and (min-width: 500px) {
     h1 { 
-        font-size: 3em;
+        font-size: 2em;
     }
     h2 {
-        font-size: 2.6em;
+        font-size: 1.5em;
     }
     h3 {
         font-size: 1.5em;

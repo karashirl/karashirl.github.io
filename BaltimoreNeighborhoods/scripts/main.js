@@ -5,23 +5,23 @@ function imgZoom(contLow) {
         document.getElementById("neighborhood" + i).style.opacity = "0";
         document.getElementById("neighborhood" + i).onclick = "null";
         if (document.documentElement.clientWidth >= 1300) {
-            document.getElementById("neighborhood" + i).style.height = "400px";
-            document.getElementById("neighborhoodLargeOuter").style.width = "50%";
+            document.getElementById("neighborhood" + i).style.height = "310px";
+            document.getElementById("neighborhoodLargeOuter").style.width = "calc((100% - 80px) / 2)";
             document.getElementById("neighborhoodLargeOuter").style.height = "700px";
         }
         else if (document.documentElement.clientWidth < 1300 && document.documentElement.clientWidth >= 1100) {
-            document.getElementById("neighborhood" + i).style.height = "116.66px";
-            document.getElementById("neighborhoodLargeOuter").style.width = "50%";
+            document.getElementById("neighborhood" + i).style.height = "193.33px";
+            document.getElementById("neighborhoodLargeOuter").style.width = "calc((100% - 80px) / 2)";
             document.getElementById("neighborhoodLargeOuter").style.height = "700px";
         }
         else if (document.documentElement.clientWidth < 1100 && document.documentElement.clientWidth >= 700) {
-                document.getElementById("neighborhood" + i).style.height = "200px";
-                document.getElementById("neighborhoodLargeOuter").style.width = "100%";
+                document.getElementById("neighborhood" + i).style.height = "160px";
+                document.getElementById("neighborhoodLargeOuter").style.width = "calc(100% - 40px)";
                 document.getElementById("neighborhoodLargeOuter").style.height = "600px";
             }
             else if (document.documentElement.clientWidth < 700) {
                 document.getElementById("neighborhood" + i).style.display = "none";
-                document.getElementById("neighborhoodLargeOuter").style.width = "100%";
+                document.getElementById("neighborhoodLargeOuter").style.width = "calc(100% - 40px)";
                 document.getElementById("neighborhoodLargeOuter").style.height = "300px";
                 document.getElementById("contText" + i).style.top = "300px";
             }

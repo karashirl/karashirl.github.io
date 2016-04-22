@@ -24,8 +24,8 @@
           </a>
         <nav>
           <a href="index.html">Home</a>
-          <a href="https://s3.amazonaws.com/accredible-profile-uploads/udacity/resumes/1460747098639" target="_blank">Resume</a>
-          <a href="index.html">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#portfolio">Portfolio</a>
         </nav>
     </div>
     </div>
@@ -35,7 +35,8 @@
             <h1>Kara Anderson</h1>
             <p class="small">Front-End Web Developer</p>
           </div>
-            <img class="centerImg" id="arrow" src="images/down_arrow.png" alt="down arrow">
+            <a name="portfolio"></a>
+            <a href="#portfolio"><img class="centerImg" id="arrow" src="images/down_arrow.png" alt="down arrow"></a>
         </div>
       </div>
   </div>
@@ -53,16 +54,17 @@
         <div class="col-md-6">
             <a href="BaltimoreNeighborhoods/index.html" target="_blank"><img class="img-responsive darken" src="images/baltimore_neighborhoods.jpg" alt="Sample image of featured neighborhood project"></a>
             <div class="col-md-12">
-              <h3>Baltimore Neighborhoods</h3>
+              <h3>Neighborhoods of Baltimore</h3>
               <p class="small">A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.</p>
               <a href="BaltimoreNeighborhoods/index.html" target="_blank"><img id="button" src="images/view_button.png"></a>
             </div>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of online resume project">
+          <img class="img-responsive darken" src="images/resume_project.jpg" alt="Sample image of online resume project">
           <div class="col-md-12">
-            <h3>Online Resume (coming soon)</h3>
+            <h3>Online Resume</h3>
             <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf. </p>
+            <a href="#resume"><img id="button" src="images/view_button.png"></a>
           </div>
         </div>
       </div>
@@ -79,34 +81,45 @@
           <div class="col-md-12">
             <h3>Health Tracker (coming soon)</h3>
             <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf.</p>
+            <a name="resume"></a>
           </div>
         </div>
       </div>
       </div>
       </div>
-      <div class="container resume">
+      <div class="container-fluid resume">
       <div class="row">
+      <div class="container">
         <div class="col-md-12">
           <h2>Resume</h2>
         </div>
+        </div>
       </div>
-        <div class="row">
-        <div class="col-md-5" style="padding-right: 3em">
+        <div class="row resume">
+        <div class="container">
+        <div class="col-md-4 col-sm-12 col-xs-12" id="profile">
           <h3>PROFILE</h3>
           <p class="small">Motivated front-end web developer seeking an entry-level position with an innovative company that challenges me and offers opportunities for growth. Self-taught HTML, CSS and JavaScript and currently pursuing formal web development degree. Background in digital marketing, seeking a career change.
           </p>
         </div>
-        <div class="col-md-2">
-          <img id="headshot" src="images/headshot.jpg">
-        </div>
-        <div class="col-md-5" style="padding-left: 3em">
+        <div class="col-md-4 col-md-push-4 col-sm-6 col-xs-6" id="about">
           <h3>ABOUT</h3>
-          <p class="small">Kara Anderson<br>Location: Baltimore, Maryland</p>
-          <h3>CONTACT</h3>
-          <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a><br><a href="https://www.linkedin.com/in/kanderson4">LinkedIn</a></p>
+          <p class="small">Name: Kara Anderson<br>Location: Baltimore, Maryland</p>
+          <h3>CONNECT</h3>
+          <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a></p>
+          <div>
+            <a href="https://github.com/karashirl" target="_blank"><img id="social_icons" src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><img id="social_icons" src="images/linkedin.png"></a>
+            <a href="https://twitter.com/karashirl" target="_blank"><img id="social_icons" src="images/twitter.png"></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-pull-4 col-sm-6 col-xs-6" id="headshot">
+          <img src="images/headshot.jpg">
         </div>
       </div>
-      <div class="row">
+      </div>
+      <div class="row resume row-blue">
+        <div class="container">
         <div class="col-md-12">
           <h3>EXPERIENCE</h3>
           <h4>Udacity Front-End Web Development Nanodegree</h4>
@@ -141,6 +154,12 @@
           <ul><li>Managed development of comprehensive branding and communications strategies for over 20 domestic and international companies while advancing internal goals of marketing company</li>
           <li>Boosted client brand awareness and exposure by planning and implementing marketing, advertising, public relations and social media campaigns, working within tight budget constraints</li>
           <li>Encouraged learning and development in the community by conducting social media and general marketing training sessions for local businesses</li></ul>
+        </div>
+      </div>
+      </div>
+      <div class="row resume">
+      <div class="container">
+        <div class="col-md-12">
           <h3>EDUCATION</h3>
           <h4>Udacity <em>(April 2016–Present)</em></h4>
           <p class="small">Nanodegree, Front-End Web Development</p>
@@ -153,7 +172,13 @@
           <br>
           <h4>University of Hawaii at Manoa <em>(August 2008–December 2008)</em></h4>
           <p class="small">National Student Exchange Program</p>
-          <h3>TECHNICAL EXPERTISE</h3>
+          </div>
+          </div>
+        </div>
+        <div class="row resume row-blue">
+        <div class="container">
+          <div class="col-md-12">
+            <h3>TECHNICAL EXPERTISE</h3>
           </div>
           <div class="col-md-6">
           <h4>Professional Skillset</h4>
@@ -183,14 +208,19 @@
             <li>Slack</li>
           </ul>
           </div>
-          <div class="col-md-12">
-          <h3>VOLUNTEER EXPERIENCE</h3>
-          <h4>Court Appointed Special Advocates for Children (CASA) of Baltimore City <em>(January 2015–Present)</em></h4>
-          <p class="small">Serve as an advocate to represent the best interests of abused and neglected children in Baltimore City</p>
-          <br>
-          <h4>United Way of Central Maryland <em>(August 2012–Present)</em></h4>
-          <p class="small">Volunteer at local food banks, farms and schools, and annual Project Homeless Connect event</p>
         </div>
+        </div>
+        <div class="row resume">
+        <div class="container">
+          <div class="col-md-12">
+            <h3>VOLUNTEER EXPERIENCE</h3>
+            <h4>Court Appointed Special Advocates for Children (CASA) of Baltimore City <em>(January 2015–Present)</em></h4>
+            <p class="small">Serve as an advocate to represent the best interests of abused and neglected children in Baltimore City</p>
+            <br>
+            <h4>United Way of Central Maryland <em>(August 2012–Present)</em></h4>
+            <p class="small">Volunteer at local food banks, farms and schools, and annual Project Homeless Connect event</p>
+          </div>
+          </div>
       </div>  
     </div>
     <div class="container-fluid">

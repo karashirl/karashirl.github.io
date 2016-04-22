@@ -15,6 +15,30 @@ p {
     font-size: 1.25em;
     line-height: 1.7em;
 }
+
+.contHigh {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url('images/header_home2.jpg') top center;
+    background-size: cover;
+}
+
+.contHighDetail {
+    display: table-cell;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.intro {
+    text-align: center;
+    padding: 3% 15% 3% 15%;
+        background-image: url(images/map_background.jpg);
+    background-attachment: fixed;
+}
+
 .container {  
     max-width: 100%;
 }
@@ -31,10 +55,15 @@ p {
     width: 100px;
 }
 
+.neighborhood-cont {
+    padding: 20px;
+}
+
 #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
     display: table;
     height: 500px;
-    width: 33.33%;
+    width: calc((100% - 120px) / 3);
+    padding: 20px;
     float: left;
     opacity: 1;
     -moz-transition: height .4s, opacity .4s;
@@ -130,7 +159,7 @@ p {
 
 @media only screen and (max-width:1300px) and (min-width:701px) {
     #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
-        width: 50%;
+        width: calc((100% - 80px) / 2);
     }
 }
 @media only screen and (max-width:1100px) {
@@ -142,7 +171,7 @@ p {
 }
 @media only screen and (max-width:700px) {
     #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
-        width: 100%;
+        width: calc(100% - 40px);
         transition: all 0s;
     }
     #neighborhoodLargeOuter {

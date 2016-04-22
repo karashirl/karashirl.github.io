@@ -183,11 +183,11 @@ ul {
 }
 
 #arrow { 
-    height: 30px;
-    top: calc(100% - 50px);
-    left: calc(50% - 19.64px);
+    height: 40px;
+    top: calc(100% - 60px);
+    left: calc(50% - 26.19px);
     animation-name: arrow;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 

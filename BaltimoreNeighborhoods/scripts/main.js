@@ -43,7 +43,7 @@ function imgZoom(contLow) {
                 document.getElementById("neighborhoodLarge").style.backgroundSize = "cover";
                 break;
             case 2:
-                document.getElementById("neighborhoodLarge").style.background = "url('images/remington.jpg')";
+                document.getElementById("neighborhoodLarge").style.background = "url('images/hampden.jpg')";
                 document.getElementById("neighborhoodLarge").style.backgroundSize = "cover";
                 break;
             case 3:

@@ -3,7 +3,6 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 h2 {
-    margin: 20px 40px 20px 40px;
     font-size: 200%;
 }
 h3 {
@@ -37,10 +36,22 @@ p.source {
     vertical-align: middle;
 }
 
+#back-tab {
+    position: fixed;
+    float: left;
+    font-size: 0.8em;
+    color: #4d6480;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 1em;
+    margin: 0;
+    top: 20px;
+    z-index: 1;
+}
+
 .intro {
     text-align: center;
     padding: 3% 15% 3% 15%;
-        background-image: url(images/map_background.jpg);
+    background-image: url(images/map_background.jpg);
     background-attachment: fixed;
 }
 
@@ -83,6 +94,7 @@ p.source {
     height: 100%;
     background-size: cover;
 }
+
 #neighborhoodLargeOuter {
     position: absolute;
     float: left;
@@ -190,12 +202,18 @@ p.source {
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
     }
+    .intro {
+        padding: 3%;
+    }
 }
 @media only screen and (max-width:410px) {
     .detail h4 {
         font-size: 1.75em;
     }
     .contTitle {
+        font-size: 1em;
+    }
+    .contHighDetail {
         font-size: 1em;
     }
 }

@@ -207,6 +207,11 @@ ul {
     width: 36px;
     margin-left: 6px;
     margin-right: 6px;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 
 .resume { 
@@ -378,11 +383,6 @@ hr {
         margin-bottom: -10px;
         filter: hue-rotate(90deg);
         -webkit-filter: hue-rotate(90deg);
-        -moz-transition: all .3s;
-        -webkit-transition: all .3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all .3s;
-        transition: all .3s;
     }
 }
 

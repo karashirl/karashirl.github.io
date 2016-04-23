@@ -209,12 +209,6 @@ ul {
     margin-right: 6px;
 }
 
-#social_icons:hover {
-    filter: hue-rotate(90deg);
-    -webkit-filter: hue-rotate(90deg);
-    transition: .6s -webkit-filter, .6s filter, .6s -moz-filter, .6s -ms-filter;
-}
-
 .resume { 
     padding-top: 2em;
     padding-bottom: 2em;
@@ -362,6 +356,12 @@ hr {
         -webkit-filter: brightness(100%);
     }
 
+    #button:hover {
+        filter: hue-rotate(90deg);
+        -webkit-filter: hue-rotate(90deg);
+        transition: .6s -webkit-filter, .6s filter, .6s -moz-filter, .6s -ms-filter;
+    }
+
     #headshot img:hover{
         width: 160px;
         filter: grayscale(0%);
@@ -371,6 +371,18 @@ hr {
     #icon-title img:hover {
         width: 60px;
         padding-bottom: 10px;
+    }
+
+    #social_icons:hover {
+        width: 46px;
+        margin-bottom: -10px;
+        filter: hue-rotate(90deg);
+        -webkit-filter: hue-rotate(90deg);
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all .3s;
+        transition: all .3s;
     }
 }
 

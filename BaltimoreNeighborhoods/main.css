@@ -10,7 +10,7 @@ h3 {
     font-size: 175%;
 }
 p {
-    margin: 20px 40px;
+    margin: 20px 0px;
     font-size: 1.25em;
     line-height: 1.7em;
 }
@@ -132,8 +132,10 @@ p.source {
 #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
     position: absolute;
     height: 700px;
-    width: 50%;
+    width: calc(50% - 72px);
     float: left;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: white;
     right: -50%;
     z-index: -1;

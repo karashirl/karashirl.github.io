@@ -60,10 +60,14 @@ function imgZoom(contLow) {
                 break;
         }
         }
-        window.scrollTo(0,0);
         }        
 }
 
+function undoZoom() { 
+    location.reload();
+}
+
+/*
 function undoZoom(contLow) {
     
     for (var i = 0; i < 6; i++) {
@@ -79,7 +83,7 @@ function undoZoom(contLow) {
         document.getElementById("contText" + i).style.zIndex = "-1";
         document.getElementById("contText" + i).style.position = "absolute";
         document.getElementById("contText" + i).style.overflow = "hidden";
-        document.getElementById("neighborhood" + i).setAttribute('onclick','imgZoom(' + i + ')');
+        document.getElementById("neighborhood" + i).setAttribute('onclick','imgZoom(' + i + ');');
         switch(i) {
             case 0:
                 document.getElementById("neighborhoodLarge").style.background = "url('images/patterson.jpg')";
@@ -102,3 +106,4 @@ function undoZoom(contLow) {
         }
         }
 }
+*/

@@ -160,7 +160,6 @@ ul {
 /* MAIN CONTENT */
 
 .mainImg { 
-    background-attachment: fixed;
     background-image: url('images/header.jpg');
     background-size: cover;
     -webkit-background-size: cover;
@@ -418,6 +417,9 @@ hr {
 @media screen and (min-width: 992px) {
     #headshot, #about {
         margin-bottom: 0;
+    }
+    .mainImg {
+        background-attachment: fixed;
     }
 }
 

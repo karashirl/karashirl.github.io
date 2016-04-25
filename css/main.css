@@ -160,7 +160,8 @@ ul {
 /* MAIN CONTENT */
 
 .mainImg { 
-    background-image: url('images/header2_med.jpg');
+    background-attachment: fixed;
+    background-image: url('images/header.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -362,9 +363,6 @@ hr {
 
 /* col-sm */
 @media screen and (min-width: 768px) {
-    .mainImg {
-        background-image: url('images/header2.jpg');
-    }
     .darken {
         filter: brightness(65%);
         -webkit-filter: brightness(65%);
@@ -418,10 +416,6 @@ hr {
 
 /* col-md */
 @media screen and (min-width: 992px) {
-    .mainImg {
-        background-image: url('images/header2.jpg');
-        background: fixed;
-    }
     #headshot, #about {
         margin-bottom: 0;
     }

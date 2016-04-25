@@ -160,7 +160,7 @@ ul {
 /* MAIN CONTENT */
 
 .mainImg { 
-    background-image: url('images/header.jpg');
+    background-image: url('images/header_med.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -377,6 +377,10 @@ hr {
         -webkit-filter: brightness(100%);
         -ms-filter: brightness(100%);
         -o-filter: brightness(100%);
+    }
+
+    .mainImg {
+        background-image: url('images/header.jpg');
     }
 
     #button:hover {

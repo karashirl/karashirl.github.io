@@ -295,12 +295,6 @@ hr {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 500px) {
-    #social_icons {
-        width: 36px;
-        margin-right: 16px;
-    }
-
-@media screen and (min-width: 500px) {
     h1 { 
         font-size: 4em;
     }
@@ -345,6 +339,9 @@ hr {
         -o-transition: all .5s;
         transition: all .5s;
     }
+    .mainImg {
+        max-width: 768px;
+    }
     .textBlock {
         margin: 50px 12%;
     }
@@ -361,10 +358,17 @@ hr {
         -o-transition: all .3s;
         transition: all .3s;
     }
+    #social_icons {
+        width: 36px;
+        margin-right: 16px;
+    }
 }
 
 /* col-sm */
 @media screen and (min-width: 768px) {
+    .mainImg {
+        max-width: 992px;
+    }
     .darken {
         filter: brightness(65%);
         -webkit-filter: brightness(65%);

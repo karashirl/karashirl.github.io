@@ -41,17 +41,18 @@ p {
 
 p.large {
     font-size: 1.2em;
-    line-height: 170%;
+    line-height: 1.7em;
 }
 
 p.small {
     font-size: 1.3em;
-    line-height: 170%;
+    line-height: 1.5em;
 }
 
 ul {
     font-size: 1.3em;
     font-weight: 300;
+    line-height: 1.5em;
 }
 
 /* NAVIGATION */
@@ -156,12 +157,15 @@ ul {
     transform: translate(calc(100vw - 150px), 50px);
 }
 
-/*Main Content */
+/* MAIN CONTENT */
 
 .mainImg { 
     background: fixed;
     background-image: url('images/header2.jpg');
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
 }
 
@@ -207,9 +211,8 @@ ul {
 }
 
 #social_icons {
-    width: 36px;
-    margin-left: 6px;
-    margin-right: 6px;
+    width: 28px;
+    margin-right: 8px;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
     -ms-transition: all 0.3s;
@@ -292,6 +295,12 @@ hr {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 500px) {
+    #social_icons {
+        width: 36px;
+        margin-right: 16px;
+    }
+
+@media screen and (min-width: 500px) {
     h1 { 
         font-size: 4em;
     }
@@ -343,6 +352,9 @@ hr {
         width: 130px;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
         -moz-transition: all .3s;
         -webkit-transition: all .3s;
         -ms-transition: all 0.3s;
@@ -356,17 +368,26 @@ hr {
     .darken {
         filter: brightness(65%);
         -webkit-filter: brightness(65%);
+        -moz-filter: brightness(65%);
+        -ms-filter: brightness(65%);
+        -o-filter: brightness(65%);
         transition: .6s -webkit-filter, .6s filter, .6s -moz-filter, .6s -ms-filter;
     }
 
     .darken:hover {
         filter: brightness(100%);
+        -moz-filter: brightness(100%);
         -webkit-filter: brightness(100%);
+        -ms-filter: brightness(100%);
+        -o-filter: brightness(100%);
     }
 
     #button:hover {
         filter: hue-rotate(90deg);
         -webkit-filter: hue-rotate(90deg);
+        -moz-filter: hue-rotate(90deg);
+        -ms-filter: hue-rotate(90deg);
+        -o-filter: hue-rotate(90deg);
         transition: .6s -webkit-filter, .6s filter, .6s -moz-filter, .6s -ms-filter;
     }
 
@@ -374,6 +395,9 @@ hr {
         width: 160px;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
     }
 
     #icon-title img:hover {
@@ -386,6 +410,9 @@ hr {
         margin-bottom: -10px;
         filter: hue-rotate(90deg);
         -webkit-filter: hue-rotate(90deg);
+        -moz-filter: hue-rotate(90deg);
+        -ms-filter: hue-rotate(90deg);
+        -o-filter: hue-rotate(90deg);
     }
 }
 

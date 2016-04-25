@@ -38,6 +38,9 @@ p.source {
     height: 100vh;
     background: url('images/header_home3.jpg') top center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .img-top {
@@ -111,8 +114,6 @@ p.source {
 }
 
 .detail {
-    filter: brightness(50%);
-    -webkit-filter: brightness(50%);
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -122,12 +123,6 @@ p.source {
     -ms-transition: all .6s;
     -o-transition: all .6s;
     transition: all .6s;
-}
-
-.detail:hover {
-    text-shadow: 2px 2px #000;
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
 }
 
 .detail h4 {
@@ -223,6 +218,25 @@ p.source {
     }
     .intro {
         padding: 1em 3em;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .detail {
+        filter: brightness(50%);
+        -moz-filter: brightness(50%);;
+        -webkit-filter: brightness(50%);
+        -ms-filter: brightness(50%);
+        -o-filter: brightness(50%);
+    }
+
+    .detail:hover {
+        text-shadow: 2px 2px #000;
+        filter: brightness(100%);
+        -moz-filter: brightness(100%);;
+        -webkit-filter: brightness(100%);
+        -ms-filter: brightness(100%);
+        -o-filter: brightness(100%);
     }
 }
 

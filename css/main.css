@@ -422,9 +422,6 @@ hr {
     #headshot, #about {
         margin-bottom: 0;
     }
-    .mainImg {
-        background-attachment: fixed;
-    }
 }
 
 /* ANIMATIONS */

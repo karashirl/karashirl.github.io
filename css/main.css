@@ -160,7 +160,7 @@ ul {
 /* MAIN CONTENT */
 
 .mainImg { 
-    background-image: url('images/header2_xs.jpg');
+    background-image: url('images/header2_med.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -338,9 +338,6 @@ hr {
         -o-transition: all .5s;
         transition: all .5s;
     }
-    .mainImg {
-        background-image: url('images/header2_sm.jpg');
-    }
     .textBlock {
         margin: 50px 12%;
     }
@@ -366,7 +363,7 @@ hr {
 /* col-sm */
 @media screen and (min-width: 768px) {
     .mainImg {
-        background-image: url('images/header2_med.jpg');
+        background-image: url('images/header2.jpg');
     }
     .darken {
         filter: brightness(65%);
@@ -422,7 +419,6 @@ hr {
 /* col-md */
 @media screen and (min-width: 992px) {
     .mainImg {
-        background-image: url('images/header2.jpg');
         background: fixed;
     }
     #headshot, #about {

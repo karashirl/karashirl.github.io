@@ -1,14 +1,19 @@
+/* MAIN STYLES */
+
 body {
     margin: 0;
     font-family: 'Roboto Slab', serif;
 }
+
 h2 {
-    font-size: 200%;
+    font-size: 2em;
 }
+
 h3 {
     text-align: center;
-    font-size: 175%;
+    font-size: 1.75em;
 }
+
 p {
     margin: 20px 0px;
     font-size: 1.25em;
@@ -20,7 +25,14 @@ p.source {
     font-style: italic;
 }
 
-.contHigh {
+/* MAIN CONTENT */
+
+.container {  
+    max-width: 100%;
+}
+
+.top {
+    font-size: 1em;
     display: table;
     width: 100%;
     height: 100vh;
@@ -28,12 +40,13 @@ p.source {
     background-size: cover;
 }
 
-.contHighDetail {
+.img-top {
+    font-size: 1em;
     display: table-cell;
     color: white;
-    font-size: 1.5em;
     text-align: center;
     vertical-align: middle;
+    padding: 1em;
 }
 
 #back-tab {
@@ -45,20 +58,17 @@ p.source {
     padding: 1em;
     margin: 0;
     top: 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .intro {
     text-align: center;
-    padding: 3% 15% 3% 15%;
+    padding: 1em 2em;
     background-image: url(images/map_background.jpg);
     background-attachment: fixed;
 }
 
-.container {  
-    max-width: 100%;
-}
-.contTitle {
+.title {
     background-color: #4d6480;
     color: white;
     padding: 0.8em;
@@ -66,48 +76,40 @@ p.source {
     font-size: 1.3em;
 }
 
-#button {  
+.button {  
     padding-top: 0.5em;
     width: 100px;
 }
 
 .neighborhood-cont {
-    padding: 20px;
+    padding: 15px;
 }
 
 #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
     display: table;
     height: 500px;
-    width: calc((100% - 120px) / 3);
+    width: calc(100% - 40px);
     padding: 20px;
     float: left;
     opacity: 1;
-    -moz-transition: height .4s, opacity .4s;
-    -webkit-transition: height .4s, opacity .4s;
-    -ms-transition: height .4s, opacity .4s;
-    -o-transition: height .4s, opacity .4s;
-    transition: height .4s, opacity .4s;
 }
 
-#neighborhoodLarge {
+#ft-img-large-cont {
+    position: absolute;
+    float: left;
+    height: 500px;
+    width: 33.33%;
+    padding: 15px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#ft-img-large {
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-#neighborhoodLargeOuter {
-    position: absolute;
-    float: left;
-    height: 500px;
-    width: 33.33%;
-    opacity: 0;
-    z-index: -1;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
 .detail {
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
@@ -121,101 +123,120 @@ p.source {
     -o-transition: all .6s;
     transition: all .6s;
 }
-.detail h4 {
-    color: white;
-    font-size: 2em;
-}
-#hideRight0, #hideRight1, #hideRight2, #hideRight3, #hideRight4, #hideRight5 {
-    overflow: hidden;
-    position: relative;
-}
-#contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
-    position: absolute;
-    height: 700px;
-    width: calc(50% - 72px);
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: white;
-    right: -50%;
-    z-index: -1;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
 
 .detail:hover {
     text-shadow: 2px 2px #000;
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
 }
-#bkgd0 {
+
+.detail h4 {
+    color: white;
+    font-size: 1.75em;
+    text-shadow: 2px 2px #000;
+}
+
+#desc-cont0, #desc-cont1, #desc-cont2, #desc-cont3, #desc-cont4, #desc-cont5 {
+    overflow: hidden;
+    position: relative;
+}
+
+#desc0, #desc1, #desc2, #desc3, #desc4, #desc5 {
+    position: absolute;
+    height: auto;
+    width: calc(100% - 90px);
+    float: left;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: white;
+    right: -50%;
+    top: -15px;
+    z-index: -1;
+}
+
+#hood-img0 {
     background: url('images/patterson.jpg');
     background-size: cover;
 }
-#bkgd1 {
+
+#hood-img1 {
     background: url('images/mt_vernon.jpg');
     background-size: cover;
 }
-#bkgd2 {
+
+#hood-img2 {
     background: url('images/hampden.jpg');
     background-size: cover;
 }
-#bkgd3 {
+
+#hood-img3 {
     background: url('images/fells.jpg');
     background-size: cover;
 }
-#bkgd4 {
+
+#hood-img4 {
     background: url('images/harbor_east.jpg');
     background-size: cover;
 }
-#bkgd5 {
+
+#hood-img5 {
     background: url('images/mt_wash.jpg');
     background-size: cover;
 }
 
-@media only screen and (max-width:1300px) and (min-width:701px) {
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:410px) {
+    .detail h4 {
+        font-size: 2em;
+    }
+    .img-top {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
+        width: calc((100% - 120px) / 3);
+        -moz-transition: height .4s, opacity .4s;
+        -webkit-transition: height .4s, opacity .4s;
+        -ms-transition: height .4s, opacity .4s;
+        -o-transition: height .4s, opacity .4s;
+        transition: height .4s, opacity .4s;
+    }
+    #ft-img-large-cont {
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    #desc0, #desc1, #desc2, #desc3, #desc4, #desc5 {
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    .detail {
+        text-shadow: 0px;
+    }
+    .intro {
+        padding: 1em 3em;
+    }
+}
+
+@media only screen and (min-width:701px) and (max-width:1300px) {
     #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
         width: calc((100% - 80px) / 2);
     }
 }
-@media only screen and (max-width:1100px) {
-    #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
-        width: 100%;
-        height: auto;
+
+@media only screen and (min-width:1100px) {
+    #desc0, #desc1, #desc2, #desc3, #desc4, #desc5 {
+        width: calc(50% - 72px);
+        height: 700px;
         position: absolute;
     }
 }
-@media only screen and (max-width:700px) {
-    #neighborhood0, #neighborhood1, #neighborhood2, #neighborhood3, #neighborhood4, #neighborhood5 {
-        width: calc(100% - 40px);
-        transition: all 0s;
-    }
-    #neighborhoodLargeOuter {
-        transition: all 0s;
-    }
-    #contText0, #contText1, #contText2, #contText3, #contText4, #contText5 {
-        transition: all 0s;
-    }
-    .detail {
-    text-shadow: 2px 2px #000;
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
-    }
-    .intro {
-        padding: 3%;
-    }
-}
-@media only screen and (max-width:410px) {
-    .detail h4 {
-        font-size: 1.75em;
-    }
-    .contTitle {
-        font-size: 1em;
-    }
-    .contHighDetail {
-        font-size: 1em;
-    }
-}
+

@@ -419,6 +419,7 @@ hr {
 /* col-md */
 @media screen and (min-width: 992px) {
     .mainImg {
+        background-image: url('images/header2.jpg');
         background: fixed;
     }
     #headshot, #about {

@@ -55,6 +55,10 @@ ul {
     line-height: 1.5em;
 }
 
+hr { 
+    margin-bottom: 0;
+}
+
 /* NAVIGATION */
 
 #header {
@@ -76,8 +80,8 @@ ul {
     position: fixed;
     height: 73px;
     z-index: 999;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 6px;
+    margin-left: 15px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -92,8 +96,8 @@ ul {
     background-color: rgba(0, 0, 0, 0.8);
     width: 150px;
     position: absolute;
-    -webkit-transform: translate(100vw, 50px);
-    transform: translate(100vw, 50px);
+    -webkit-transform: translate(100vw, 95px);
+    transform: translate(100vw, 95px);
     transition: transform 0.3s ease;
 }
 
@@ -124,12 +128,13 @@ ul {
 
 #logo.smaller {
     height: 33px;
-    margin-top: 8px;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 #header.smaller nav {
     margin-top: 0px;
+    -webkit-transform: translate(100vw, 50px);
+    transform: translate(100vw, 50px);
 }
 
 #header.smaller nav a {
@@ -149,12 +154,28 @@ ul {
 #header_menu svg {
     width: 35px;
     fill: #E0E0E0;
-    margin: 0.6em;
+    margin: 2em 1em;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #header nav.open {
+    -webkit-transform: translate(calc(100vw - 150px), 95px);
+    transform: translate(calc(100vw - 150px), 95px);
+}
+
+#header.smaller nav.open {
     -webkit-transform: translate(calc(100vw - 150px), 50px);
     transform: translate(calc(100vw - 150px), 50px);
+}
+
+#header.smaller svg {
+    width: 26px;
+    fill: #E0E0E0;
+    margin: 0.75em 1em;
 }
 
 /* MAIN CONTENT */
@@ -181,25 +202,31 @@ ul {
     text-align: center;
 }
 
-.centerImg { 
-    display: block;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+.summary {
+    text-align: center;
+    padding-top: 2em;
 }
 
 #arrow { 
-    height: 40px;
-    top: calc(100% - 60px);
-    left: calc(50% - 26.19px);
-    animation-name: arrow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    width: 100%;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    top: calc(100% - 80px);
+    position: absolute;
+    animation: bounce 1.5s infinite ease-in-out;
 }
 
 #button {  
-    width: 100px;
+    width: 90px;
     margin-bottom: 3em;
+    color: white;
+    background-color: #4d5a80;
+    font-size: 18px;
+    border: none;
+    padding: 8px;
+    font-weight: 300;
+    margin-top: 0.5em;
 }
 
 #footer { 
@@ -209,9 +236,27 @@ ul {
     text-align: center;
 }
 
-#social_icons {
-    width: 28px;
-    margin-right: 8px;
+.social-resume {
+    display: table;
+}
+
+.social-footer {
+    display: table;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.social-int {
+    display: table-cell;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.social-icon {
+    color: #4d5a80;
+    font-size: 30px;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
     -ms-transition: all 0.3s;
@@ -240,32 +285,55 @@ ul {
     transition: all .5s;
 }
 
-#icon-title {
-    padding-left: 30px;
-    padding-right: 30px;
-    display: table;
+.icon-cont, .title-cont {
+    display: table-cell;
+    height: 75px;
+    vertical-align: middle;
 }
 
-#icon-title h3 {
+.icon-cont {
+    padding-left: 30px;
+}
+
+.title-cont {
+    padding-right: 20px; 
+}
+
+.resume-icon {
+    color: white;
+    font-size: 26px;
+    border-radius: 50%;
+    padding: 12px;
+    transition: .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all .2s;
+}
+
+.title-cont h3 {
     font-size: 1.8em;
-    padding-left: 20px;
     vertical-align: middle;
     display: table-cell;
-    padding-bottom: 20px;
-    }
-
-#icon-title img {
-    width: 50px;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    padding-bottom: 20px;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
-hr { 
-    margin-bottom: 0;
+#experience {
+    background-color: #2d8659;
+}
+
+#education {
+    background-color: #2d2d86;
+    padding: 12px 8.29px;
+}
+
+#technical {
+    background-color: #ff3300;
+}
+
+#volunteer {
+    background-color: #cc0000;
 }
 
 #about {
@@ -277,7 +345,7 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 4em;
+    padding-top: 70px;
 }
 
 .container-color {
@@ -354,20 +422,16 @@ hr {
         -o-transition: all .3s;
         transition: all .3s;
     }
-    #social_icons {
-        width: 36px;
-        margin-right: 16px;
-    }
 }
 
 /* col-sm */
 @media screen and (min-width: 768px) {
     .darken {
-        filter: brightness(65%);
-        -webkit-filter: brightness(65%);
-        -moz-filter: brightness(65%);
-        -ms-filter: brightness(65%);
-        -o-filter: brightness(65%);
+        filter: brightness(75%);
+        -webkit-filter: brightness(75%);
+        -moz-filter: brightness(75%);
+        -ms-filter: brightness(75%);
+        -o-filter: brightness(75%);
         transition: .6s -webkit-filter, .6s filter, .6s -moz-filter, .6s -ms-filter;
     }
 
@@ -394,6 +458,7 @@ hr {
 
     #headshot img:hover{
         width: 160px;
+        padding-top: 50px;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);
@@ -401,14 +466,18 @@ hr {
         -o-filter: grayscale(0%);
     }
 
-    #icon-title img:hover {
-        width: 60px;
-        padding-bottom: 10px;
+    .resume-icon:hover {
+        font-size: 34px;
+        padding: 15px;
     }
 
-    #social_icons:hover {
-        width: 46px;
-        margin-bottom: -10px;
+    #education:hover {
+        padding: 15px 10.15px;
+    }
+
+    .social-icon:hover {
+        font-size: 38px;
+        text-decoration: none;
         filter: hue-rotate(90deg);
         -webkit-filter: hue-rotate(90deg);
         -moz-filter: hue-rotate(90deg);
@@ -426,8 +495,8 @@ hr {
 
 /* ANIMATIONS */
 
-@keyframes arrow { 
-    0%   {opacity: 0;}
-    50%  {opacity: 1;}
-    100%   {opacity: 0;}
+@keyframes bounce {
+    0%, 20%, 60%, 100%  { transform: translateY(0); }
+    40%  { transform: translateY(-20px); }
+    80% { transform: translateY(-10px); }
 }

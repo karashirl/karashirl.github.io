@@ -406,6 +406,10 @@ hr {
         -o-transition: all .5s;
         transition: all .5s;
     }
+    #header.smaller nav {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+}
     .textBlock {
         margin: 50px 12%;
     }

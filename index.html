@@ -1,227 +1,256 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Kara Anderson - Front End Web Developer - Baltimore, MD</title>
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/main.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+  <title>Portfolio - Kara Anderson - Front End Web Developer - Baltimore, MD</title>
 </head>
 <body>
   <main>
     <div class="container-fluid">
-    <div class="row">
-      <div id="header">
-        <a href="index.html"><img src="images/logo_main2.svg" id="logo"></a>
-        <a id="header_menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
+      <div class="row">
+        <div id="header">
+          <a href="index.html"><img src="images/logo_main2.svg" id="logo" alt=""></a>
+          <a id="header_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
           </a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="#resume">Résumé</a>
-          <a href="#portfolio">Portfolio</a>
-        </nav>
-    </div>
-    </div>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="#resume">Résumé</a>
+            <a href="#portfolio">Portfolio</a>
+          </nav>
+        </div>
+      </div>
       <div class="row">
         <div class="mainImg">
           <div class="textOverlay">
             <h1>Kara Anderson</h1>
             <p class="small">Front-End Web Developer</p>
           </div>
-            <a href="#portfolio"><i class="fa fa-angle-down" id="arrow" aria-hidden="true"></i></a>
+          <a href="#portfolio"><i class="fa fa-angle-down" id="arrow" aria-hidden="true"></i></a>
         </div>
       </div>
-  </div>
-  <div class="container-color"><a name="portfolio"></a>
-  <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="textBlock">
-            <h2>Portfolio</h2>
-            <p class="large">Check out a few responsive pages I've designed and built -- both from scratch and using Bootstrap framework -- with HTML, CSS and JavaScript.</p>
+    </div>
+    <div class="container-color">
+      <a id="portfolio"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="textBlock">
+              <h2>Portfolio</h2>
+              <p class="large">Check out a few responsive pages I've designed and built -- both from scratch and using Bootstrap framework -- with HTML, CSS and JavaScript.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-            <a href="BaltimoreNeighborhoods/index.html"><img class="img-responsive darken" src="images/baltimore_neighborhoods.jpg" alt="Sample image of featured neighborhood project"></a>
+        <!-- TODO: add future completed projects -->
+        <div class="row">
+          <div class="col-md-6">
+            <a href="BaltimoreNeighborhoods/index.html"><img class="img-responsive darken" src="images/baltimore_neighborhoods.jpg" alt="Preview image of featured neighborhood project"></a>
             <div class="col-md-12 summary">
               <h3>Neighborhoods of Baltimore</h3>
-              <p class="small">A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.</p>
-              <a href="BaltimoreNeighborhoods/index.html"><button id="button">VIEW</button></a>
+              <p class="small">A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.</p><br>
+              <a class="button" href="BaltimoreNeighborhoods/index.html">VIEW</a>
             </div>
-        </div>
-        <div class="col-md-6">
-          <a href="#resume"><img class="img-responsive darken" src="images/resume_project.jpg" alt="Sample image of online resume project"></a>
-          <div class="col-md-12 summary">
-            <h3>Online Résumé</h3>
-            <p class="small">A more visually interesting, HTML version of my résumé with subtle transitions.</p>
-            <a href="#resume"><button id="button">VIEW</button></a>
+          </div>
+          <div class="col-md-6">
+            <a href="#resume"><img class="img-responsive darken" src="images/resume_project.jpg" alt="Preview image of online resume project"></a>
+            <div class="col-md-12 summary">
+              <h3>Online Résumé</h3>
+              <p class="small">A more visually interesting, HTML version of my résumé with subtle transitions.</p><br>
+              <a class="button" href="#resume">VIEW</a>
+            </div>
           </div>
         </div>
       </div>
-<!--  <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of interactive neighborhood map project">
-          <div class="col-md-12">
-            <h3>Interactive Neighborhood Map (coming soon)</h3>
-            <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img class="img-responsive darken" src="images/placeholder_project.jpg" alt="Sample image of health tracker project">
-          <div class="col-md-12">
-            <h3>Health Tracker (coming soon)</h3>
-            <p class="small">Bacon ipsum dolor amet hamburger frankfurter fatback, tongue tenderloin beef chicken short ribs meatloaf.</p>
-          </div>
-        </div>
-      </div> -->
-      </div>
-      </div>
-      <a name="resume"></a>
-      <div class="container-fluid resume">
+    </div>
+    <a id="resume"></a>
+    <div class="container-fluid resume">
       <div class="row">
-      <div class="container">
-        <div class="col-md-12">
-          <h2>Résumé</h2>
-          <hr>
-        </div>
-        </div>
-      </div>
-        <div class="row resume">
         <div class="container">
-        <div class="col-md-4 col-sm-12 col-xs-12" id="profile">
-          <h3>PROFILE</h3>
-          <p class="small">Motivated front-end web developer seeking an entry-level position with an innovative company that challenges me and offers opportunities for growth. Self-taught HTML, CSS and JavaScript and currently pursuing formal web development degree. Background in digital marketing, seeking a career change.
-          </p>
-        </div>
-        <div class="col-md-4 col-md-push-4 col-sm-6 col-xs-6" id="about">
-          <h3>ABOUT</h3>
-          <p class="small">Name: Kara Anderson<br>Location: Baltimore, Maryland</p>
-          <h3>CONNECT</h3>
-          <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a></p>
-          <div class="social-resume">
-            <div class="social-int"><a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a></div>
-            <div class="social-int"><a href="https://www.linkedin.com/in/kanderson4" target="_blank"<i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a></div>
-            <div class="social-int"><a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a></div>
-        </div>
-        </div>
-        <div class="col-md-4 col-md-pull-4 col-sm-6 col-xs-6" id="headshot">
-          <img src="images/headshot.jpg">
+          <div class="col-md-12">
+            <h2>Résumé</h2>
+            <hr>
+          </div>
         </div>
       </div>
+      <div class="row resume">
+        <div class="container">
+          <div class="col-md-4 col-sm-12 col-xs-12" id="profile">
+            <h3>PROFILE</h3>
+            <p class="small">Motivated front-end web developer seeking an entry-level position with an innovative company that challenges me and offers opportunities for growth. Self-taught HTML, CSS and JavaScript and currently pursuing formal web development degree. Background in digital marketing, seeking a career change.
+            </p>
+          </div>
+          <div class="col-md-4 col-md-push-4 col-sm-6 col-xs-6" id="about">
+            <h3>ABOUT</h3>
+            <p class="small">Name: Kara Anderson<br>Location: Baltimore, Maryland</p>
+            <h3>CONNECT</h3>
+            <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a></p>
+            <div class="social-resume">
+              <div class="social-int">
+                <a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
+              </div>
+              <div class="social-int">
+                <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
+              </div>
+              <div class="social-int">
+                <a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-pull-4 col-sm-6 col-xs-6" id="headshot">
+            <img src="images/headshot.jpg" alt="Kara Anderson headshot">
+          </div>
+        </div>
       </div>
       <div class="row resume row-blue">
         <div class="container">
           <div class="row">
-            <div class="icon-cont"><i class="fa fa-briefcase resume-icon" id="experience" aria-hidden="true"></i></div>
-            <div class="title-cont"><h3>EXPERIENCE</h3></div>
+            <div class="icon-cont">
+              <i class="fa fa-briefcase resume-icon" id="experience" aria-hidden="true"></i>
+            </div>
+            <div class="title-cont">
+              <h3>EXPERIENCE</h3>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <section>
+              <h4>Udacity Front-End Web Development Nanodegree</h4>
+              <p class="small"><em>April 2016–Present</em></p>
+              <ul>
+                <li>Online nanodegree program built by industry leaders, including Google, AT&T and GitHub</li>
+                <li>Complete a variety of projects focused on building mobile-first responsive websites from scratch</li>
+                <li>Advance knowledge of and experience with HTML, custom CSS, JavaScript and Bootstrap framework</li>
+              </ul>
+              <br>
+            </section>
+            <section>
+              <h4>Interactive Marketing Specialist at United Way of Central Maryland <em>(Baltimore, MD)</em></h4>
+              <p class="small"><em>August 2012–Present</em></p>
+              <ul>
+                <li>Oversee organization’s web marketing strategy by creating engaging content that drives users to action</li>
+                <li>Create and manage all content for responsive WordPress site (uwcm.org), report on traffic and analyze trends using Google Analytics</li>
+                <li>Assist with site updates and debugging</li>
+                <li>Serve as project manager for all web marketing projects, ensuring efficiency and consistently meeting tight deadlines</li>
+              </ul>
+              <br>
+            </section>
+            <section>
+              <h4>Marketing Consultant & Project Manager at MOS Creative <em>(Columbia, MD)</em></h4>
+              <p class="small"><em>April 2012–August 2012</em></p>
+              <ul>
+                <li>Researched, developed and helped execute creative online marketing initiatives to help clients connect more effectively with their target market and generate more leads</li>
+                <li>Conducted thorough competitive and market analyses to understand the state of clients’ industries, analyzing strengths, weaknesses, opportunities and threats</li>
+                <li>Developed content to engage and convert leads to customers, leveraging social media, blogging, targeted email campaigns and search engine marketing</li>
+                <li>Developed and nurtured strong client relationships with open communication, constantly exchanging ideas and encouraging feedback</li>
+              </ul>
+              <br>
+            </section>
+            <section>
+              <h4>Instructor of English as a Second Language <em>(Jundiaí, São Paulo, Brazil)</em></h4>
+              <p class="small"><em>January 2011–March 2012</em></p>
+              <ul>
+                <li>Managed classroom and in-company lessons for more than 15 groups of foreign language students</li>
+                <li>Created personal brand identity and carried out marketing activities to attract both individual students and large companies as customers</li>
+                <li>Gained experience targeting a foreign audience with different purchasing behavior and attitudes</li>
+                <li>Developed and maintained strong relationships with students by communicating effectively, anticipating customer wants and needs, and offering periodic promotions and incentives</li>
+              </ul>
+              <br>
+            </section>
+            <section>
+              <h4>Marketing Project Manager & Graphic Designer at ECI-Find New Markets <em>(Columbia, SC)</em></h4>
+              <p class="small"><em>September 2007–September 2010</em></p>
+              <ul>
+                <li>Managed development of comprehensive branding and communications strategies for over 20 domestic and international companies while advancing internal goals of marketing company</li>
+                <li>Boosted client brand awareness and exposure by planning and implementing marketing, advertising, public relations and social media campaigns, working within tight budget constraints</li>
+                <li>Encouraged learning and development in the community by conducting social media and general marketing training sessions for local businesses</li>
+              </ul>
+            </section>
+          </div>
         </div>
-        <div class="col-md-12">
-          <h4>Udacity Front-End Web Development Nanodegree</h4>
-          <p class="small"><em>April 2016–Present</em></p>
-          <ul><li>Online nanodegree program built by industry leaders, including Google, AT&T and GitHub</li>
-          <li>Complete a variety of projects focused on building mobile-first responsive websites from scratch</li>
-          <li>Advance knowledge of and experience with HTML, custom CSS, JavaScript and Bootstrap framework</li></ul>
-          <br>
-          <h4>Interactive Marketing Specialist at United Way of Central Maryland <em>(Baltimore, MD)</em></h4>
-          <p class="small"><em>August 2012–Present</em></p>
-          <ul><li>Oversee organization’s web marketing strategy by creating engaging content that drives users to action</li>
-          <li>Create and manage all content for responsive WordPress site (uwcm.org), report on traffic and analyze trends using Google Analytics</li>
-          <li>Assist with site updates and debugging</li>
-          <li>Serve as project manager for all web marketing projects, ensuring efficiency and consistently meeting tight deadlines</li></ul>
-          <br>
-          <h4>Marketing Consultant & Project Manager at MOS Creative <em>(Columbia, MD)</em></h4>
-          <p class="small"><em>April 2012–August 2012</em></p>
-          <ul><li>Researched, developed and helped execute creative online marketing initiatives to help clients connect more effectively with their target market and generate more leads</li>
-          <li>Conducted thorough competitive and market analyses to understand the state of clients’ industries, analyzing strengths, weaknesses, opportunities and threats</li>
-          <li>Developed content to engage and convert leads to customers, leveraging social media, blogging, targeted email campaigns and search engine marketing</li>
-          <li>Developed and nurtured strong client relationships with open communication, constantly exchanging ideas and encouraging feedback</li></ul>
-          <br>
-          <h4>Instructor of English as a Second Language <em>(Jundiaí, São Paulo, Brazil)</em></h4>
-          <p class="small"><em>January 2011–March 2012</em></p>
-          <ul><li>Managed classroom and in-company lessons for more than 15 groups of foreign language students</li>
-          <li>Created personal brand identity and carried out marketing activities to attract both individual students and large companies as customers</li>
-          <li>Gained experience targeting a foreign audience with different purchasing behavior and attitudes</li>
-          <li>Developed and maintained strong relationships with students by communicating effectively, anticipating customer wants and needs, and offering periodic promotions and incentives</li></ul>
-          <br>
-          <h4>Marketing Project Manager & Graphic Designer at ECI-Find New Markets <em>(Columbia, SC)</em></h4>
-          <p class="small"><em>September 2007–September 2010</em></p>
-          <ul><li>Managed development of comprehensive branding and communications strategies for over 20 domestic and international companies while advancing internal goals of marketing company</li>
-          <li>Boosted client brand awareness and exposure by planning and implementing marketing, advertising, public relations and social media campaigns, working within tight budget constraints</li>
-          <li>Encouraged learning and development in the community by conducting social media and general marketing training sessions for local businesses</li></ul>
-        </div>
-      </div>
       </div>
       <div class="row resume">
-      <div class="container">
-          <div class="row">
-            <div class="icon-cont"><i class="fa fa-graduation-cap resume-icon" id="education" aria-hidden="true"></i></div>
-            <div class="title-cont"><h3>EDUCATION</h3></div>
-        </div>
-        <div class="col-md-12">
-          <h4>Udacity <em>(April 2016–Present)</em></h4>
-          <p class="small">Nanodegree, Front-End Web Development</p>
-          <br>
-          <h4>University of South Carolina <em>(August 2005–August 2010)</em></h4>
-          <ul><li>Bachelor of Science, Business Administration (Major: Marketing)</li>
-          <li>Bachelor of Arts, Journalism & Mass Communications (Major: Advertising)</li>
-          <li>GPA: 3.9</li></ul>
-          <br>
-          <h4>University of Hawaii at Manoa <em>(August 2008–December 2008)</em></h4>
-          <p class="small">National Student Exchange Program</p>
-          </div>
-          </div>
-        </div>
-        <div class="row resume row-blue">
         <div class="container">
           <div class="row">
-            <div class="icon-cont"><i class="fa fa-wrench resume-icon" id="technical" aria-hidden="true"></i></div>
-            <div class="title-cont"><h3>TECHNICAL EXPERTISE</h3></div>
-        </div>
-          <div class="col-md-6">
-          <h4>Professional Skillset</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Wordpress</li>
-            <li>Joomla!</li>
-          </ul>
-          <h4>Working Knowledge</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Git</li>
-            <li>GitHub</li>
-          </ul>
+            <div class="icon-cont">
+              <i class="fa fa-graduation-cap resume-icon" id="education" aria-hidden="true"></i>
+            </div>
+            <div class="title-cont">
+              <h3>EDUCATION</h3>
+            </div>
           </div>
-          <div class="col-md-6">
-          <h4>Tools</h4>
-          <ul>
-            <li>Sublime Text</li>
-            <li>Brackets</li>
-            <li>Adobe Creative Cloud</li>
-            <li>Google Adwords & Analytics</li>
-            <li>Microsoft Office</li>
-            <li>Asana</li>
-            <li>Slack</li>
-          </ul>
+          <div class="col-md-12">
+            <h4>Udacity <em>(April 2016–Present)</em></h4>
+            <p class="small">Nanodegree, Front-End Web Development</p>
+            <br>
+            <h4>University of South Carolina <em>(August 2005–August 2010)</em></h4>
+            <ul>
+              <li>Bachelor of Science, Business Administration (Major: Marketing)</li>
+              <li>Bachelor of Arts, Journalism & Mass Communications (Major: Advertising)</li>
+              <li>GPA: 3.9</li>
+            </ul>
+            <br>
+            <h4>University of Hawaii at Manoa <em>(August 2008–December 2008)</em></h4>
+            <p class="small">National Student Exchange Program</p>
           </div>
         </div>
-        </div>
-        <div class="row resume">
+      </div>
+      <div class="row resume row-blue">
         <div class="container">
           <div class="row">
-            <div class="icon-cont"><i class="fa fa-heart resume-icon" id="volunteer" aria-hidden="true"></i></div>
-            <div class="title-cont"><h3>VOLUNTEER EXPERIENCE</h3></div>
+            <div class="icon-cont">
+              <i class="fa fa-wrench resume-icon" id="technical" aria-hidden="true"></i>
+            </div>
+            <div class="title-cont">
+              <h3>TECHNICAL EXPERTISE</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Professional Skillset</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Wordpress</li>
+              <li>Joomla!</li>
+            </ul>
+            <h4>Working Knowledge</h4>
+            <ul>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Tools</h4>
+            <ul>
+              <li>Sublime Text</li>
+              <li>Brackets</li>
+              <li>Adobe Creative Cloud</li>
+              <li>Google Adwords & Analytics</li>
+              <li>Microsoft Office</li>
+              <li>Asana</li>
+              <li>Slack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row resume">
+        <div class="container">
+          <div class="row">
+            <div class="icon-cont">
+              <i class="fa fa-heart resume-icon" id="volunteer" aria-hidden="true"></i>
+            </div>
+            <div class="title-cont">
+              <h3>VOLUNTEER EXPERIENCE</h3>
+            </div>
           </div>
           <div class="col-md-12">
             <h4>Court Appointed Special Advocates for Children (CASA) of Baltimore City <em>(January 2015–Present)</em></h4>
@@ -230,7 +259,7 @@
             <h4>United Way of Central Maryland <em>(August 2012–Present)</em></h4>
             <p class="small">Volunteer at local food banks, farms and schools, and annual Project Homeless Connect event</p>
           </div>
-          </div>
+        </div>
       </div>  
     </div>
     <div class="container-fluid">
@@ -238,30 +267,19 @@
         <div class="col-md-12">
           <p>Follow me:</p>
           <div class="social-footer">
-            <div class="social-int"><a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a></div>
-            <div class="social-int"><a href="https://www.linkedin.com/in/kanderson4" target="_blank"<i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a></div>
-            <div class="social-int"><a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a></div>
+            <div class="social-int">
+              <a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
+            </div>
+            <div class="social-int">
+              <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
+            </div>
+            <div class="social-int">
+              <a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-    <script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      var menu = document.querySelector('#header_menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('nav');
-
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-
-    </script>
 </body>
 </html>

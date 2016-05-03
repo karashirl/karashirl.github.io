@@ -4,11 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/main.js"></script>
   <title>Portfolio - Kara Anderson - Front End Web Developer - Baltimore, MD</title>
 </head>
 <body>
@@ -16,27 +15,26 @@
     <div class="container-fluid">
       <div class="row">
         <div id="header">
-          <a href="index.html"><img src="images/logo_main2.svg" id="logo" alt=""></a>
-          <a id="header_menu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <a href="index.html"><img id="logo" src="images/logo_main2.svg" alt=""></a>
+          <a id="nav-icon-cont">
+            <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
             </svg>
           </a>
-          <nav>
-            <a href="index.html">Home</a>
-            <a href="#resume">Résumé</a>
-            <a href="#portfolio">Portfolio</a>
+          <nav id="nav-list">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="#resume">Résumé</a>
+            <a class="nav-item" href="#portfolio">Portfolio</a>
           </nav>
         </div>
       </div>
       <div class="row">
-        <div class="mainImg">
-          <div class="textOverlay">
-            <h1>Kara Anderson</h1>
-            <p class="small">Front-End Web Developer</p>
-          </div>
-          <a href="#portfolio"><i class="fa fa-angle-down" id="arrow" aria-hidden="true"></i></a>
+        <img class="mainImg" src="images/header_md.jpg" srcset="images/header_sm.jpg 500w, images/header_md.jpg 1000w, images/header_lg.jpg 2000w" alt="">
+        <div class="textOverlay">
+          <h1>Kara Anderson</h1>
+          <p class="small">Front-End Web Developer</p>
         </div>
+        <a href="#portfolio"><i class="fa fa-angle-down" id="arrow" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="container-color">
@@ -53,7 +51,7 @@
         <!-- TODO: add future completed projects -->
         <div class="row">
           <div class="col-md-6">
-            <a href="BaltimoreNeighborhoods/index.html"><img class="img-responsive darken" src="images/baltimore_neighborhoods.jpg" alt="Preview image of featured neighborhood project"></a>
+            <a href="BaltimoreNeighborhoods/index.html"><img class="img-responsive darken" src="images/baltimore_neighborhoods_sm.jpg" srcset="images/baltimore_neighborhoods_sm.jpg 500w, images/baltimore_neighborhoods_lg.jpg 992w" alt="Preview image of Baltimore neighborhoods project"></a>
             <div class="col-md-12 summary">
               <h3>Neighborhoods of Baltimore</h3>
               <p class="small">A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.</p><br>
@@ -61,7 +59,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <a href="#resume"><img class="img-responsive darken" src="images/resume_project.jpg" alt="Preview image of online resume project"></a>
+            <a href="#resume"><img class="img-responsive darken" src="images/resume_project_sm.jpg" srcset="images/resume_project_sm.jpg 500w, images/resume_project_lg.jpg 992w" alt="Preview image of online resume project"></a>
             <div class="col-md-12 summary">
               <h3>Online Résumé</h3>
               <p class="small">A more visually interesting, HTML version of my résumé with subtle transitions.</p><br>
@@ -70,28 +68,34 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <a id="resume"></a>
+        <svg class="diagonal white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <polygon points="100 0 100 10 0 10" />
+        </svg>
+      </div>
     </div>
     <a id="resume"></a>
-    <div class="container-fluid resume">
+    <div class="container-fluid">
       <div class="row">
         <div class="container">
           <div class="col-md-12">
-            <h2>Résumé</h2>
+            <h2 class="resume-heading2">Résumé</h2>
             <hr>
           </div>
         </div>
       </div>
-      <div class="row resume">
+      <div class="row">
         <div class="container">
-          <div class="col-md-4 col-sm-12 col-xs-12" id="profile">
-            <h3>PROFILE</h3>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <h3 class="resume-heading3">PROFILE</h3>
             <p class="small">Motivated front-end web developer seeking an entry-level position with an innovative company that challenges me and offers opportunities for growth. Self-taught HTML, CSS and JavaScript and currently pursuing formal web development degree. Background in digital marketing, seeking a career change.
             </p>
           </div>
           <div class="col-md-4 col-md-push-4 col-sm-6 col-xs-6" id="about">
-            <h3>ABOUT</h3>
+            <h3 class="resume-heading3">ABOUT</h3>
             <p class="small">Name: Kara Anderson<br>Location: Baltimore, Maryland</p>
-            <h3>CONNECT</h3>
+            <h3 class="resume-heading3">CONNECT</h3>
             <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a></p>
             <div class="social-resume">
               <div class="social-int">
@@ -106,22 +110,24 @@
             </div>
           </div>
           <div class="col-md-4 col-md-pull-4 col-sm-6 col-xs-6" id="headshot">
-            <img src="images/headshot.jpg" alt="Kara Anderson headshot">
+            <img id="headshot-image" src="images/headshot.jpg" alt="Kara Anderson headshot">
           </div>
         </div>
+        <svg class="diagonal lt-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="0 0 100 10 0 10" />
+        </svg>
       </div>
-      <div class="row resume row-blue">
+      <div class="row row-blue">
         <div class="container">
           <div class="row">
             <div class="icon-cont">
               <i class="fa fa-briefcase resume-icon" id="experience" aria-hidden="true"></i>
             </div>
             <div class="title-cont">
-              <h3>EXPERIENCE</h3>
+              <h3 class="resume-heading3">EXPERIENCE</h3>
             </div>
           </div>
           <div class="col-md-12">
-            <section>
+            <article>
               <h4>Udacity Front-End Web Development Nanodegree</h4>
               <p class="small"><em>April 2016–Present</em></p>
               <ul>
@@ -130,8 +136,8 @@
                 <li>Advance knowledge of and experience with HTML, custom CSS, JavaScript and Bootstrap framework</li>
               </ul>
               <br>
-            </section>
-            <section>
+            </article>
+            <article>
               <h4>Interactive Marketing Specialist at United Way of Central Maryland <em>(Baltimore, MD)</em></h4>
               <p class="small"><em>August 2012–Present</em></p>
               <ul>
@@ -141,8 +147,8 @@
                 <li>Serve as project manager for all web marketing projects, ensuring efficiency and consistently meeting tight deadlines</li>
               </ul>
               <br>
-            </section>
-            <section>
+            </article>
+            <article>
               <h4>Marketing Consultant & Project Manager at MOS Creative <em>(Columbia, MD)</em></h4>
               <p class="small"><em>April 2012–August 2012</em></p>
               <ul>
@@ -152,8 +158,8 @@
                 <li>Developed and nurtured strong client relationships with open communication, constantly exchanging ideas and encouraging feedback</li>
               </ul>
               <br>
-            </section>
-            <section>
+            </article>
+            <article>
               <h4>Instructor of English as a Second Language <em>(Jundiaí, São Paulo, Brazil)</em></h4>
               <p class="small"><em>January 2011–March 2012</em></p>
               <ul>
@@ -163,8 +169,8 @@
                 <li>Developed and maintained strong relationships with students by communicating effectively, anticipating customer wants and needs, and offering periodic promotions and incentives</li>
               </ul>
               <br>
-            </section>
-            <section>
+            </article>
+            <article>
               <h4>Marketing Project Manager & Graphic Designer at ECI-Find New Markets <em>(Columbia, SC)</em></h4>
               <p class="small"><em>September 2007–September 2010</em></p>
               <ul>
@@ -172,18 +178,21 @@
                 <li>Boosted client brand awareness and exposure by planning and implementing marketing, advertising, public relations and social media campaigns, working within tight budget constraints</li>
                 <li>Encouraged learning and development in the community by conducting social media and general marketing training sessions for local businesses</li>
               </ul>
-            </section>
+            </article>
           </div>
         </div>
+        <svg class="diagonal white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <polygon points="100 0 100 10 0 10" />
+        </svg>
       </div>
-      <div class="row resume">
-        <div class="container">
+      <div class="row pad-top">
+        <div class="container pad-bottom">
           <div class="row">
             <div class="icon-cont">
               <i class="fa fa-graduation-cap resume-icon" id="education" aria-hidden="true"></i>
             </div>
             <div class="title-cont">
-              <h3>EDUCATION</h3>
+              <h3 class="resume-heading3">EDUCATION</h3>
             </div>
           </div>
           <div class="col-md-12">
@@ -201,15 +210,18 @@
             <p class="small">National Student Exchange Program</p>
           </div>
         </div>
+        <svg class="diagonal lt-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <polygon points="0 0 100 10 0 10" />
+        </svg>
       </div>
-      <div class="row resume row-blue">
+      <div class="row row-blue">
         <div class="container">
           <div class="row">
             <div class="icon-cont">
               <i class="fa fa-wrench resume-icon" id="technical" aria-hidden="true"></i>
             </div>
             <div class="title-cont">
-              <h3>TECHNICAL EXPERTISE</h3>
+              <h3 class="resume-heading3">TECHNICAL EXPERTISE</h3>
             </div>
           </div>
           <div class="col-md-6">
@@ -241,15 +253,18 @@
             </ul>
           </div>
         </div>
+        <svg class="diagonal white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <polygon points="100 0 100 10 0 10" />
+        </svg>
       </div>
-      <div class="row resume">
-        <div class="container">
+      <div class="row pad-top pad-bottom">
+        <div class="container pad-bottom">
           <div class="row">
             <div class="icon-cont">
               <i class="fa fa-heart resume-icon" id="volunteer" aria-hidden="true"></i>
             </div>
             <div class="title-cont">
-              <h3>VOLUNTEER EXPERIENCE</h3>
+              <h3 class="resume-heading3">VOLUNTEER EXPERIENCE</h3>
             </div>
           </div>
           <div class="col-md-12">
@@ -260,7 +275,7 @@
             <p class="small">Volunteer at local food banks, farms and schools, and annual Project Homeless Connect event</p>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
     <div class="container-fluid">
       <div class="row" id="footer">
@@ -281,19 +296,6 @@
       </div>
     </div>
   </main>
-  <script>
-  /* Open nav menu when the hamburger icon is clicked. */
-    var menu = document.querySelector('#header_menu');
-    var main = document.querySelector('main');
-    var drawer = document.querySelector('nav');
-
-    menu.addEventListener('click', function(e) {
-      drawer.classList.toggle('open');
-      e.stopPropagation();
-    });
-    main.addEventListener('click', function() {
-      drawer.classList.remove('open');
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

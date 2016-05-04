@@ -9,8 +9,15 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    overflow-x: hidden;
 }
 
 h1 {
@@ -183,7 +190,7 @@ hr {
     display: inline-block;
     float: right;
     width: 35px;
-    margin: 2em 1em;
+    margin: 30px 15px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -202,18 +209,22 @@ hr {
 
 #nav-icon-cont.smaller {
     width: 26px;
-    margin: 0.75em 1em;
+    margin: 10px;
 }
 
 /* MAIN CONTENT */
 
-.mainImg {
+.main-img {
+    background-image: url('images/header_md.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
-    width: 100vw;
-    object-fit: cover;
 }
 
-.textOverlay {
+.text-overlay {
     width: 100%;
     top: calc(50vh - 57.5px);
     text-align: center;
@@ -236,7 +247,7 @@ hr {
     width: 100%;
 }
 
-.textBlock {
+.text-block {
     margin: 2.5em 1em;
     text-align: center;
 }
@@ -251,14 +262,13 @@ hr {
     display: block;
     width: 100%;
     height: 45px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: -15px;
+    padding-right: -15px;
 }
 
 .white {
     fill: white;
 }
-
 
 .lt-blue {
     fill: #ecedf1;
@@ -330,6 +340,7 @@ hr {
     height: 75px;
     vertical-align: middle;
     padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .icon-cont {
@@ -463,7 +474,7 @@ hr {
         transform: translate(0, 0);
     }
 
-    .textBlock {
+    .text-block {
         margin: 50px 12%;
     }
 
@@ -480,10 +491,18 @@ hr {
         -o-transition: all .3s;
         transition: all .3s;
     }
+
+    .icon-cont, .title-cont {
+        padding-top: 1em;
+    }
 }
 
 /* col-sm */
 @media screen and (min-width: 768px) {
+    .main-img {
+        background-image: url('images/header_lg.jpg');
+    }
+
     .darken {
         -moz-filter: brightness(75%);
         -webkit-filter: brightness(75%);

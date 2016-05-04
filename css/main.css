@@ -215,7 +215,7 @@ hr {
 /* MAIN CONTENT */
 
 .main-img {
-    background-image: url('images/header_md.jpg');
+    background-image: url('images/header_sm.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -474,6 +474,10 @@ hr {
         transform: translate(0, 0);
     }
 
+    .main-img {
+        background-image: url('images/header_lg.jpg');
+    }
+
     .text-block {
         margin: 50px 12%;
     }
@@ -499,9 +503,6 @@ hr {
 
 /* col-sm */
 @media screen and (min-width: 768px) {
-    .main-img {
-        background-image: url('images/header_lg.jpg');
-    }
 
     .darken {
         -moz-filter: brightness(75%);

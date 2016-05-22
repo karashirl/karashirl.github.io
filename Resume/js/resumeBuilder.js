@@ -5,7 +5,6 @@ var bio = {
     'name': 'Kara Anderson',
     'role': 'Front-End Web Developer',
     'contacts': [{
-        'mobile': '410-555-5555',
         'email': 'karashirl@gmail.com',
         'github': 'karashirl',
         'twitter': '@karashirl',
@@ -28,12 +27,11 @@ var bio = {
                 var formattedGithub = HTMLgithub.replace(data, thisContact.github);
                 var formattedTwitter = HTMLtwitter.replace(data, thisContact.twitter);
                 var formattedEmail = HTMLemail.replace(data, thisContact.email);
-                var formattedMobile = HTMLmobile.replace(data, thisContact.mobile);
 
                 $header.prepend(formattedName, formattedRole);
-                $('#topContacts').prepend(formattedMobile, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
+                $('#topContacts').prepend(formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
                 $header.append(formattedPic, formattedIntro);
-                $('#footerContacts').prepend(formattedMobile, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
+                $('#footerContacts').prepend(formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
             }
         }
 
@@ -103,26 +101,26 @@ var education = {
         'degree': 'BA, Business Administration',
         'majors': ['Marketing'],
         'dates': '2005 - 2010',
-        'url': 'www.sc.edu'
+        'url': 'http://www.sc.edu'
     }, {
         'name': 'University of South Carolina',
         'location': 'Columbia, SC, US',
         'degree': 'BS, Journalism & Mass Communication',
         'majors': ['Advertising'],
         'dates': '2005 - 2010',
-        'url': 'www.sc.edu'
+        'url': 'http://www.sc.edu'
     }],
     'onlineCourses': [{
         'title': 'Front-End Web Development',
         'school': 'Udacity',
         'date': '2016 - Present',
-        'url': 'www.udacity.com'
+        'url': 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'
     }],
     display: function () {
         for (var school in education.schools) {
             if (education.schools.hasOwnProperty(school)) {
                 var thisSchool = education.schools[school];
-                var formattedSchool = HTMLschoolName.replace(data, thisSchool.name);
+                var formattedSchool = HTMLschoolName.replace(data, thisSchool.name).replace('#', thisSchool.url);
                 var formattedDegree = HTMLschoolDegree.replace(data, thisSchool.degree);
                 var schoolDegree = formattedSchool + formattedDegree;
                 var formattedDates = HTMLschoolDates.replace(data, thisSchool.dates);
@@ -140,13 +138,12 @@ var education = {
         for (var onlineCourse in education.onlineCourses) {
             if (education.onlineCourses.hasOwnProperty(onlineCourse)) {
                 var thisCourse = education.onlineCourses[onlineCourse];
-                var formattedOnlineTitle = HTMLonlineTitle.replace(data, thisCourse.title);
+                var formattedOnlineTitle = HTMLonlineTitle.replace(data, thisCourse.title).replace('#', thisCourse.url);
                 var formattedOnlineSchool = HTMLonlineSchool.replace(data, thisCourse.school);
                 var titleSchool = formattedOnlineTitle + formattedOnlineSchool;
                 var formattedOnlineDates = HTMLonlineDates.replace(data, thisCourse.date);
-                var formattedOnlineURL = HTMLonlineURL.replace(data, thisCourse.url);
 
-                $('.education-entry:last').append(titleSchool, formattedOnlineDates, formattedOnlineURL);
+                $('.education-entry:last').append(titleSchool, formattedOnlineDates);
             }
         }
     }
@@ -155,11 +152,13 @@ var education = {
 var projects = {
     'projects': [{
         'title': 'Portfolio',
+        'url': 'http://karashirl.github.io',
         'dates': "2016",
         'description': 'A portfolio site featuring projects I have designed and built -- both from scratch and using Bootstrap framework -- with HTML, CSS and JavaScript.',
         'images': ['images/portfolio_sm.jpg']
     }, {
         'title': 'Neighborhoods of Baltimore',
+        'url': 'http://karashirl.github.io/BaltimoreNeighborhoods/index.html',
         'dates': "2016",
         'description': 'A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.',
         'images': ['images/baltimore_neighborhoods_sm.jpg']
@@ -168,7 +167,7 @@ var projects = {
         for (var project in projects.projects) {
             if (projects.projects.hasOwnProperty(project)) {
                 var thisProject = projects.projects[project];
-                var formattedTitle = HTMLprojectTitle.replace(data, thisProject.title);
+                var formattedTitle = HTMLprojectTitle.replace(data, thisProject.title).replace('#', thisProject.url);
                 var formattedDates = HTMLprojectDates.replace(data, thisProject.dates);
                 var formattedDesc = HTMLprojectDescription.replace(data, thisProject.description);
                 var formattedImage = HTMLprojectImage.replace(data, thisProject.images);

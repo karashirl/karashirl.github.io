@@ -483,7 +483,7 @@ hr {
     }
 
     #headshot-image {
-        width: 130px;
+        width: 150px;
         -moz-filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
@@ -531,7 +531,7 @@ hr {
     }
 
     #headshot-image:hover{
-        width: 160px;
+        width: 190px;
         padding-top: 50px;
         -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);

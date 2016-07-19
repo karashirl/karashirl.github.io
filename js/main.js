@@ -1,4 +1,4 @@
-var elementsToFade = [$('#bmorehoods'), $('#resume'), $('#headshot')],
+var elementsToFade = [$('#bmorehoods'), $('#resume-proj'), $('#headshot')],
     headerElements = [$('#header'), $('#logo'), $('#nav-list'), $('#nav-icon-cont')];
 
 // Open nav menu when the hamburger icon is clicked
@@ -12,7 +12,7 @@ menu.on('click', function(e) {
 });
 
 main.on('click', function() {
-    drawer.toggleClass('open');
+    drawer.removeClass('open');
 });
 
 // Shrink navigation & animate header opacity, title & subtitle on scroll

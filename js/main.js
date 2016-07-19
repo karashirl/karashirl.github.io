@@ -62,7 +62,7 @@ function headerAnimate() {
 // Fade in images when visible
 function fadeIn(elem) {
     for (i = 0; i < elementsToFade.length; i++) {
-        if (($(window).scrollTop() + ($(window).height())) > elementsToFade[i].offset().top + 225) {
+        if (($(window).scrollTop() + ($(window).height())) > elementsToFade[i].offset().top + 200) {
             elementsToFade[i].fadeTo(700, 1);
         }
     }

@@ -37,9 +37,11 @@ function headerAnimate() {
         subtitle = $('#subtitle'),
         mainImg = $('#main-img');
 
-    title.css( { opacity : (1 / distanceY) * 200 - 0.4 } );
-    subtitle.css( { opacity : (1 / distanceY) * 200 - 0.4 } );
-    mainImg.css( { opacity : (1 / distanceY) * 200 - 0.25 } );
+    if (distanceY > 0) {
+        title.css( { opacity : (1 / distanceY) * 200 - 0.4 } );
+        subtitle.css( { opacity : (1 / distanceY) * 200 - 0.4 } );
+        mainImg.css( { opacity : (1 / distanceY) * 200 - 0.25 } );
+    }
 
     if (winWidth > 767) {
         title.css( { marginRight : distanceY } );

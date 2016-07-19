@@ -28,11 +28,11 @@
           </nav>
         </div>
       </div>
-      <div class="row">
-        <div class="main-img">
-          <div class="text-overlay">
-            <h1>Kara Anderson</h1>
-            <p class="small">Front-End Web Developer & Designer</p>
+      <div class="row black">
+        <div id="main-img">
+          <div id="text-overlay">
+            <div id="title"><h1>Kara Anderson</h1></div>
+            <div id="subtitle"><p class="small">Front-End Web Developer & Designer</p></div>
           </div>
           <a href="#projects"><i class="fa fa-angle-down" id="arrow" aria-hidden="true"></i></a>
         </div>
@@ -53,7 +53,7 @@
         <!-- TODO: add future completed projects -->
         <div class="row">
           <div class="col-md-6">
-            <a href="BaltimoreNeighborhoods/index.html"><img class="img-responsive darken" src="images/baltimore_neighborhoods_sm.jpg" srcset="images/baltimore_neighborhoods_sm.jpg 500w, images/baltimore_neighborhoods_lg.jpg 992w" alt="Preview image of Baltimore neighborhoods project"></a>
+            <div id="bmorehoods"><a href="BaltimoreNeighborhoods/index.html"><img class="img-responsive darken" src="images/baltimore_neighborhoods_sm.jpg" srcset="images/baltimore_neighborhoods_sm.jpg 500w, images/baltimore_neighborhoods_lg.jpg 992w" alt="Preview image of Baltimore neighborhoods project"></a></div>
             <div class="col-md-12 summary">
               <h3>Neighborhoods of Baltimore</h3>
               <p class="small">A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.</p><br>
@@ -61,7 +61,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <a href="#resume"><img class="img-responsive darken" src="images/resume_project_sm.jpg" srcset="images/resume_project_sm.jpg 500w, images/resume_project_lg.jpg 992w" alt="Preview image of online resume project"></a>
+            <div id="resume"><a href="#resume"><img class="img-responsive darken" src="images/resume_project_sm.jpg" srcset="images/resume_project_sm.jpg 500w, images/resume_project_lg.jpg 992w" alt="Preview image of online resume project"></a></div>
             <div class="col-md-12 summary">
               <h3>Online Résumé</h3>
               <p class="small">A more visually interesting, HTML version of my résumé with subtle transitions.</p><br>
@@ -300,6 +300,7 @@
       </div>
     </div>
   </main>
+  <script src="js/jquery-1.12.3.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

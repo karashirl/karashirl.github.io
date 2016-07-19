@@ -214,7 +214,11 @@ hr {
 
 /* MAIN CONTENT */
 
-.main-img {
+.black {
+    background-color: black;
+}
+
+#main-img {
     background-image: url('images/header_sm.jpg');
     background-size: cover;
     -webkit-background-size: cover;
@@ -222,9 +226,10 @@ hr {
     -ms-background-size: cover;
     -o-background-size: cover;
     height: 100vh;
+    overflow-x: hidden;
 }
 
-.text-overlay {
+#text-overlay {
     width: 100%;
     top: calc(50vh - 57.5px);
     text-align: center;
@@ -274,6 +279,10 @@ hr {
     fill: #ecedf1;
 }
 
+#bmorehoods, #resume {
+    opacity: 0;
+}
+
 /* RESUME */
 
 .pad-bottom {
@@ -298,6 +307,10 @@ hr {
     -ms-transition: all 0.5s;
     -o-transition: all .5s;
     transition: all .5s;
+}
+
+#headshot {
+    opacity: 0;
 }
 
 #headshot-image {
@@ -474,7 +487,7 @@ hr {
         transform: translate(0, 0);
     }
 
-    .main-img {
+    #main-img {
         background-image: url('images/header_lg.jpg');
     }
 

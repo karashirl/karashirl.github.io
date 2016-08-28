@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 var elementsToFade = [$('#bmorehoods'), $('#resume-proj'), $('#headshot'), $('#map-proj')],
-=======
 var elementsToFade = [$('#bmorehoods'), $('#resume-proj'), $('#headshot')],
->>>>>>> 8b0a5477879c6d70e6056eaeb26e42f5708d90bd
     headerElements = [$('#header'), $('#logo'), $('#nav-list'), $('#nav-icon-cont')];
 
 // Open nav menu when the hamburger icon is clicked

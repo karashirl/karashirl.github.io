@@ -279,7 +279,11 @@ hr {
     fill: #ecedf1;
 }
 
+<<<<<<< HEAD
+#bmorehoods, #resume-proj, #map-proj {
+=======
 #bmorehoods, #resume-proj {
+>>>>>>> 8b0a5477879c6d70e6056eaeb26e42f5708d90bd
     opacity: 0;
 }
 

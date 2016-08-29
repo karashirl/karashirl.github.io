@@ -4,6 +4,10 @@
 
 I've created a portfolio site to showcase my projects I've designed and developed as I earn my [Udacity](http://www.udacity.com) Nanodegree and throughout my career transition to a front-end web developer. Take a look!
 
+## Viewing Instructions
+
+Simply open index.html in a modern browser to explore my site.
+
 ### Languages & Skills I've Used
 
 * HTML

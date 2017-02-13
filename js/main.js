@@ -1,4 +1,4 @@
-var elementsToFade = [$('#bmorehoods'), $('#resume-proj'), $('#headshot'), $('#map-proj')],
+var elementsToFade = $('.projects').find('.project-blurb'),
     headerElements = [$('#header'), $('#logo'), $('#nav-list'), $('#nav-icon-cont')];
 
 // Open nav menu when the hamburger icon is clicked
@@ -62,13 +62,13 @@ function headerAnimate() {
 // Fade in images when visible
 function fadeIn(elem) {
     for (i = 0; i < elementsToFade.length; i++) {
-        if (($(window).scrollTop() + ($(window).height())) > elementsToFade[i].offset().top + 200) {
-            elementsToFade[i].fadeTo(700, 1);
+        if (($(window).scrollTop() + ($(window).height())) > $(elementsToFade[i]).offset().top + 200) {
+            $(elementsToFade[i]).fadeTo(700, 1);
         }
     }
 }
 
-$(window).on('scroll', function(){
+$(window).on('scroll', function($){
    headerAnimate();
    fadeIn(elementsToFade);
 });

@@ -20,6 +20,10 @@ main {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Francois One', sans-serif;
+}
+
 h1 {
     font-size: 2.4em;
     margin: 10px 0px;
@@ -28,12 +32,10 @@ h1 {
 h2 {
     font-size: 2.2em;
     margin: 20px 0px;
-    font-weight: 700;
 }
 
 h3 {
     font-size: 1.4em;
-    font-weight: 700;
 }
 
 h4 {
@@ -42,6 +44,7 @@ h4 {
 
 p {
     font-weight: 300;
+    padding-bottom: 10px;
 }
 
 p.large {
@@ -52,6 +55,11 @@ p.large {
 p.small {
     font-size: 1.3em;
     line-height: 1.5em;
+}
+
+p.xsmall {
+    font-size: 1.15em;
+    line-height: 1.7em;
 }
 
 ul {
@@ -65,16 +73,17 @@ hr {
 }
 
 .button {
-    width: 90px;
     color: white;
     font-size: 18px;
     font-weight: 300;
     background-color: #4d5a80;
     border: none;
     padding: 9px 16px;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     color: white;
     text-decoration: none;
 }
@@ -171,9 +180,11 @@ hr {
     display: list-item;
     list-style: none;
     color: darkgrey;
+    text-transform: uppercase;
     text-decoration: none;
     padding-left: 40px;
     padding-right: 40px;
+    font-family: 'Francois One', sans-serif;
 }
 
 .nav-item:hover {
@@ -219,7 +230,7 @@ hr {
 }
 
 #main-img {
-    background-image: url('images/header_sm.jpg');
+    background-image: url('images/header3.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -235,6 +246,10 @@ hr {
     text-align: center;
     color: white;
     position: absolute;
+}
+
+#title {
+    font-size: 1.3em;
 }
 
 #arrow {
@@ -420,6 +435,86 @@ hr {
     margin-right:auto;
 }
 
+/* Internal Project Pages */
+
+.project .header-img {
+    background-size: cover;
+    background-position: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    height: 40vh;
+}
+
+.project #text-overlay {
+    top: 20vh
+}
+
+.project #text-overlay h2 {
+    margin: 0;
+}
+
+.project .container-main {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.project .container-main img {
+    padding-bottom: 30px;
+}
+
+.project .button {
+    margin: 10px 0;
+}
+
+.project .mobile {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Dry Angler */
+.dryangler .header-img {
+    background-image: url('images/dryangler.jpg');
+}
+
+/* Husqvarna */
+.husqvarna .header-img {
+    background-image: url('images/husqvarna.jpg');
+}
+
+/* Mid-States */
+.midstates .header-img {
+    background-image: url('images/midstates.jpg');
+}
+
+/* Young Nichols */
+.yn .header-img {
+    background-image: url('images/yn.jpg');
+}
+
+/* Hegg */
+.hegg .header-img {
+    background-image: url('images/hegg.jpg');
+}
+
+/* Williams */
+.williams .header-img {
+    background-image: url('images/williams.jpg');
+}
+
+/* Kerchers */
+.kerchers .header-img {
+    background-image: url('images/kerchers.jpg');
+}
+
+/* Seattle U */
+.seattleu .header-img {
+    /*background-color: #333;*/
+    background-image: url('images/seattleu.jpg');
+    background-position: 0% 50%;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 500px) {
@@ -485,10 +580,6 @@ hr {
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0);
         transform: translate(0, 0);
-    }
-
-    #main-img {
-        background-image: url('images/header_lg.jpg');
     }
 
     .text-block {
@@ -575,12 +666,30 @@ hr {
         -o-filter: hue-rotate(90deg);
         filter: hue-rotate(90deg);
     }
+
+    .project .mobile {
+        width: 50%;
+    }
 }
 
 /* col-md */
 @media screen and (min-width: 992px) {
     #headshot, #about {
         margin-bottom: 0;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .overflow {
+        position: absolute;
+        right: 0;
+    }
+
+    .project .mobile {
+        width: 100%;
+        margin: auto;
     }
 }
 

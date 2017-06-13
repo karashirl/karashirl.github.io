@@ -15,8 +15,9 @@ main.on('click', function() {
     drawer.removeClass('open');
 });
 
-// Shrink navigation & animate header opacity, title & subtitle on scroll
+
 function headerAnimate() {
+    // Shrink navigation & animate header opacity, title & subtitle on scroll
     var distanceY = $(window).scrollTop(),
     winWidth = $(window).width(),
     docWidth = $(document).width(),

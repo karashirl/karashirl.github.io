@@ -1,4 +1,4 @@
-var elementsToFade = $('.projects').find('.project-blurb'),
+var elementsToFade = [$('.projects').find('.project-blurb'), $('#headshot')],
     headerElements = [$('#header'), $('#logo'), $('#nav-list'), $('#nav-icon-cont')];
 
 // Open nav menu when the hamburger icon is clicked

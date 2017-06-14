@@ -44,17 +44,16 @@ h4 {
 
 p {
     font-weight: 300;
-    padding-bottom: 10px;
 }
 
 p.large {
     font-size: 1.2em;
-    line-height: 1.7em;
+    line-height: 1.6em;
 }
 
-p.small {
-    font-size: 1.3em;
-    line-height: 1.5em;
+p.small, ul.small li {
+    font-size: 16px;
+    line-height: 1.4em;
 }
 
 p.xsmall {
@@ -68,8 +67,17 @@ ul {
     line-height: 1.5em;
 }
 
+ul li {
+    padding-bottom: 6px;
+}
+
 hr {
     margin-bottom: 0;
+}
+
+.center-mobile {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .button {
@@ -444,15 +452,22 @@ hr {
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    height: 40vh;
 }
 
 .project #text-overlay {
-    top: 20vh
+    padding: calc(12vh + 95px) 20px 12vh 20px;
+    position: static;
 }
 
 .project #text-overlay h2 {
+    padding-bottom: 15px;
     margin: 0;
+}
+
+.project #text-overlay p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.3em;
 }
 
 .project .container-main {
@@ -468,7 +483,7 @@ hr {
     margin: 10px 0;
 }
 
-.project .mobile {
+.project .mobile img {
     width: 80%;
     margin: 0 auto;
 }
@@ -530,8 +545,12 @@ hr {
         font-size: 1.5em;
     }
 
-    p.small {
-        font-size: 1.3em;
+    p.small, ul.small li {
+        font-size: 18px;
+    }
+
+    ul li {
+        padding-bottom: 2px;
     }
 
     p.large {
@@ -607,6 +626,9 @@ hr {
 
 /* col-sm */
 @media screen and (min-width: 768px) {
+    .center-mobile {
+        text-align: left;
+    }
 
     .darken {
         -moz-filter: brightness(75%);
@@ -667,7 +689,13 @@ hr {
         filter: hue-rotate(90deg);
     }
 
-    .project .mobile {
+    /* Internal Project Pages */
+
+    .project #text-overlay h2 {
+        padding-bottom: 5px;
+    }
+
+    .project .mobile img {
         width: 50%;
     }
 }
@@ -687,7 +715,7 @@ hr {
         right: 0;
     }
 
-    .project .mobile {
+    .project .mobile img {
         width: 100%;
         margin: auto;
     }

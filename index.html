@@ -5,403 +5,626 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="http://karashirl.github.io/images/header3.jpg" />
-  <link href="https://fonts.googleapis.com/css?family=Francois+One|Lato:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:400,700|Zilla+Slab:300,400,400i,700,700i|Lato:300,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Portfolio - Kara Anderson - Web Designer & Front-End Developer - Baltimore, MD</title>
 </head>
 <body>
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div id="header">
-          <a href="index.html"><img id="logo" src="images/logo_main2.svg" alt=""></a>
-          <a id="nav-icon-cont">
-            <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-            </svg>
-          </a>
-          <nav id="nav-list">
-            <a class="nav-item" href="index.html">Home</a>
-            <a class="nav-item" href="#resume">Résumé</a>
-            <a class="nav-item" href="#projects">Projects</a>
-          </nav>
+  <div class="slider slider-home" id="home">
+    <div class="hero">
+      <div class="nav-container">
+        <ul class="nav">
+          <li class="work"><a href="#work" class="nav-item">Work</a></li>
+          <li class="resume"><a href="#resume" class="nav-item">Resume</a></li>
+          <li class="contact"><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hero-title">
+        <h1 class="block">Kara Anderson</h1>
+        <h3 class="block">Front-End Web Developer</h3>
+      </div>
+    </div>
+  </div> <!-- End home slider -->
+  <div class="slider slider-work" id="work">
+    <!-- <div class="background-bar"></div> -->
+    <div class="title">
+      <h1 class="block">Work</h1>
+      <div class="nav-container">
+        <ul class="nav inner-nav">
+          <li class="home"><a href="#home" class="nav-item">Home</a></li>
+          <li class="work"><a href="#work" class="nav-item active">Work</a></li>
+          <li class="resume"><a href="#resume" class="nav-item">Resume</a></li>
+          <li class="contact"><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="featured-container">
+        <div class="project project-1 selected" data-project="project-1">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Featured Project</h2>
+              <h3>Dry Angler Apparel</h3>
+            </div>
+          </div>
+        </div>
+        <div class="project project-2" data-project="project-2">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Husqvarna Carolinas</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-3" data-project="project-3">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Mid-States Construction</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-4" data-project="project-4">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Law Offices of Young & Nichols</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-5" data-project="project-5">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Seattle U Stories</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-6" data-project="project-6">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Hegg Memorial Health Center</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-7" data-project="project-7">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Williams Golf & Country Club</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-8" data-project="project-8">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Kercher's Orchards</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-9" data-project="project-9">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Columbus Sleep Consultants</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-10" data-project="project-10">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Rider's Hobby Shop</h2>
+            </div>
+          </div>
+        </div>
+        <div class="project project-11" data-project="project-11">
+          <div class="project-inner">
+            <div class="title-container">
+              <h2>Buckeye Diamond Baseball Club</h2>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End featured-container -->
+      <div class="summary-container">
+        <div class="summary summary-1" data-project="project-1">
+          <div class="overview">
+            <p class="xsmall">This Oregon-based outdoor apparel company needed a new site for both their retail and wholesale brands, Dry Angler Outdoors and Drift Creek Outdoors. The client was looking for a completely new look that reflected the versatility of their all-weather gear, an excellent shopping experience for online retail customers, and an easy way to manage inventory.</p>
+
+            <p class="xsmall">This bold, colorful site was built in Wordpress using Woocommerce for eCommerce functionality. A whole lotta organized Sass/CSS and Woocommerce template customization using PHP brought the site to life. Customized product category pages make it easy for customers to find what they're looking for and Pods Framework allows the client to quickly select which products they would like featured on various pages.</p>
+
+            <a class="button" href="http://www.dryangler.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.dryangler.com" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_lg.jpg" alt="Preview image of Dry Angler Apparel homepage"></a>
+            <a href="https://dryangler.com/product-category/women/womens-outerwear/womens-outerwear-jackets" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_category_lg.jpg" alt="Preview image of Dry Angler Apparel category page"></a>
+            <a href="https://dryangler.com/product/womens-drift-tech-hooded-jacket" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_product_lg.jpg" alt="Preview image of Dry Angler Apparel individual product page"></a>
+            <a href="https://dryangler.com/cart" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_cart_lg.jpg" alt="Preview image of Dry Angler Apparel shopping cart page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="https://dryangler.com" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_mobile.png" alt="Preview image of Dry Angler Apparel homepage on mobile"></a>
+            <a href="https://dryangler.com/product-category/men/mens-raingear/mens-rain-jackets" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_mobile3.png" alt="Preview image of Dry Angler Apparel product category page on mobile"></a>
+            <a href="https://dryangler.com/product/mens-granyte-tacoma-rain-jacket" target="_blank"><img class="img-responsive" src="images/dryangler/dryangler_mobile2.png" alt="Preview image of Dry Angler Apparel individual product page on mobile"></a>
+          </div>
+        </div> <!-- End Project 1 Summary -->
+
+        <div class="summary summary-2" data-project="project-2">
+          <div class="overview">
+            <p class="xsmall">Husqvarna, a leading manufacturer of outdoor power products, needed a landing page to interactively display their locations in North and South Carolina as part of their online ad campaign.</p>
+
+            <p class="xsmall">The map, built using Google Maps API, interacts with the list of locations using jQuery and Backbone.js. By hovering over a map marker, the respective location info in the list is scrolled to and highlighted, and vice versa. Working closely with our back-end development team, this project was a fun and interesting challenge.</p>
+              
+            <a class="button" href="http://www.myrtlebeachsmallengineequipment.com/myrtlebeach" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.myrtlebeachsmallengineequipment.com" target="_blank"><img class="img-responsive" src="images/husqvarna/husqvarna_lg.jpg" alt="Preview image of Husqvarna Carolinas landing page"></a>
+            <a href="http://www.myrtlebeachsmallengineequipment.com" target="_blank"><img class="img-responsive" src="images/husqvarna/husqvarna2_lg.jpg" alt="Preview image of Husqvarna Carolinas landing page closeup of map"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.myrtlebeachsmallengineequipment.com" target="_blank"><img class="img-responsive" src="images/husqvarna/husqvarna_mobile.png" alt="Preview image of Husqvarna Carolinas landing page on mobile"></a>
+            <a href="http://www.myrtlebeachsmallengineequipment.com" target="_blank"><img class="img-responsive" src="images/husqvarna/husqvarna_mobile2.png" alt="Preview image of Husqvarna Carolinas landing page on mobile"></a>
+          </div>
+        </div> <!-- End Project 2 Summary -->
+
+        <div class="summary summary-3" data-project="project-3">
+          <div class="overview">
+            <p class="xsmall">Mid-States Construction, an Indiana commercial and residential builder, needed a refresh to their outdated site and were looking for a clean, modern design with a way to display their past projects.</p>
+
+            <p class="xsmall">Using a heavily-customized Wordpress theme, the site features strong calls to action and a portfolio page to prominently display each project with individual pages for longer project descriptions, which the client can easily add/edit in the CMS.</p>
+            
+            <a class="button" href="http://www.midstatesconstruction.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.midstatesconstruction.com" target="_blank"><img class="img-responsive" src="images/midstates/midstates_lg.jpg" alt="Preview image of Mid-States Construction homepage"></a>
+            <a href="http://www.midstatesconstruction.com/portfolio" target="_blank"><img class="img-responsive" src="images/midstates/midstates_portfolio_lg.jpg" alt="Preview image of Mid-States Construction portfolio page"></a>
+            <a href="http://www.midstatesconstruction.com/contact" target="_blank"><img class="img-responsive" src="images/midstates/midstates_contact_lg.jpg" alt="Preview image of Mid-States Construction contact page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.midstatesconstruction.com" target="_blank"><img class="img-responsive" src="images/midstates/midstates_mobile.png" alt="Preview image of Dry Angler Apparel individual product page"></a>
+            <a href="http://www.midstatesconstruction.com/portfolio" target="_blank"><img class="img-responsive" src="images/midstates/midstates_mobile2.png" alt="Preview image of Dry Angler Apparel shopping cart page"></a>
+          </div>
+        </div> <!-- End Project 3 Summary -->
+
+        <div class="summary summary-4" data-project="project-4">
+          <div class="overview">
+            <p class="xsmall">This personal injury law firm in Bakersfield, CA was looking for a new site that would allow potential clients to easily find more information about their services.</p>
+
+            <p class="xsmall">Using a customized Wordpress theme, this super-SEO-optimized site features a contact form on every page so potential clients can easily request more information, a blog page, and well-organized, easy-to-read information about each service area.</p>
+            <a class="button" href="http://www.youngnichols.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.youngnichols.com" target="_blank"><img class="img-responsive" src="images/yn/young_nichols_lg.jpg" alt="Preview image of Young & Nichols homepage"></a>
+            <a href="http://www.youngnichols.com/practice-areas/products-liability" target="_blank"><img class="img-responsive" src="images/yn/young_nichols_inner_lg.jpg" alt="Preview image of Young & Nichols inner page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.youngnichols.com" target="_blank"><img class="img-responsive" src="images/yn/young_nichols_mobile.png" alt="Preview image of Young & Nichols homepage on mobile"></a>
+            <a href="http://www.youngnichols.com/practice-areas/trucking-accidents" target="_blank"><img class="img-responsive" src="images/yn/young_nichols_mobile2.png" alt="Preview image of Young & Nichols inner page on mobile"></a>
+          </div>
+        </div> <!-- End Project 4 Summary -->
+
+        <div class="summary summary-5" data-project="project-5">
+          <div class="overview">
+            <p class="xsmall">Seattle University needed a landing page for their <em>Stories</em> blog campaign, with the goal of drawing more campus visits and enrollments.</p>
+
+            <p class="xsmall">The page features a blog and custom video module built using Backbone.js and Wordpress Pods framework. Video thumbnails play when clicked and swap with the currently playing video.</p>
+            <a class="button" href="http://www.seattleustories.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.seattleustories.com" target="_blank"><img class="img-responsive" src="images/seattleu/seattleu_lg.jpg" alt="Preview image of Seattle University Stories homepage"></a>
+            <a href="http://www.seattleustories.com" target="_blank"><img class="img-responsive" src="images/seattleu/seattleu_inner_lg.jpg" alt="Preview image of Seattle University Stories inner page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.seattleustories.com" target="_blank"><img class="img-responsive" src="images/seattleu/seattleu_mobile.png" alt="Preview image of Seattle University Stories homepage on mobile"></a>
+            <a href="http://www.seattleustories.com" target="_blank"><img class="img-responsive" src="images/seattleu/seattleu_mobile2.png" alt="Preview image of Seattle University Stories inner page on mobile"></a>
+          </div>
+        </div> <!-- End Project 5 Summary -->
+
+        <div class="summary summary-6" data-project="project-6">
+          <div class="overview">
+            <p class="xsmall">Hegg Memorial Health Center of Rock Valley, IA needed a re-organization of their large site as well as a fresh new look.</p>
+
+            <p class="xsmall">Their new site features a mega menu so users can easily browse the list of the client's health and patient services, an events calendar and a blog. The client really took the site to the next level and added new content including a countdown timer, careers page and photo gallery.</p>
+            <a class="button" href="http://www.hegghc.org" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.hegghc.org" target="_blank"><img class="img-responsive" src="images/hegg/hegg_lg.jpg" alt="Preview image of Hegg Memorial Health Center homepage"></a>
+            <a href="http://www.hegghc.org/health-services/hospital" target="_blank"><img class="img-responsive" src="images/hegg/hegg_inner_lg.jpg" alt="Preview image of Hegg Memorial Health Center inner page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.hegghc.org" target="_blank"><img class="img-responsive" src="images/hegg/hegg_mobile.png" alt="Preview image of Hegg Memorial Health Center homepage on mobile"></a>
+            <a href="http://www.hegghc.org/health-services/therapy" target="_blank"><img class="img-responsive" src="images/hegg/hegg_mobile2.png" alt="Preview image of Hegg Memorial Health Center inner page on mobile"></a>
+          </div>
+        </div> <!-- End Project 6 Summary -->
+
+        <div class="summary summary-7" data-project="project-7">
+          <div class="overview">
+            <p class="xsmall">Williams Golf & Country Club needed a simple, low-cost site to feature photos and information about their beautiful event venue in the Ohio River Valley.</p>
+            <p class="xsmall">The client was very pleased with this simple, easy-to-navigate site that prominently showcases their stunning imagery.</p>
+            <a class="button" href="http://www.williamsgccevents.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.williamsgccevents.com" target="_blank"><img class="img-responsive" src="images/williams/williams_lg.jpg" alt="Preview image of Williams Golf & Country Club homepage"></a>
+            <a href="http://www.williamsgccevents.com/events" target="_blank"><img class="img-responsive" src="images/williams/williams_inner_lg.jpg" alt="Preview image of Williams Golf & Country Club inner page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.williamsgccevents.com" target="_blank"><img class="img-responsive" src="images/williams/williams_mobile.png" alt="Preview image of Williams Golf & Country Club homepage on mobile"></a>
+            <a href="http://www.williamsgccevents.com/faq" target="_blank"><img class="img-responsive" src="images/williams/williams_mobile2.png" alt="Preview image of Williams Golf & Country Club inner page on mobile"></a>
+          </div>
+        </div> <!-- End Project 7 Summary -->
+
+        <div class="summary summary-8" data-project="project-8">
+          <div class="overview">
+            <p class="xsmall">Kercher's Orchards had a lot of information to share and needed a low-cost site to help draw visitors to their farm.</p>
+
+            <p class="xsmall">This festive site, built using the Wordpress Divi theme, showcases the client's activities and products and gives visitors all the information they need for a visit.</p>
+            <a class="button" href="http://www.kerchersorchard.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.kerchersorchard.com" target="_blank"><img class="img-responsive" src="images/kerchers/kerchers_lg.jpg" alt="Preview image of Kercher's Orchards homepage"></a>
+            <a href="http://www.kerchersorchard.com/photo-gallery" target="_blank"><img class="img-responsive" src="images/kerchers/kerchers_gallery_lg.jpg" alt="Preview image of Kercher's Orchards inner page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.kerchersorchard.com" target="_blank"><img class="img-responsive" src="images/kerchers/kerchers_mobile.png" alt="Preview image of Kercher's Orchards homepage on mobile"></a>
+            <a href="http://www.kerchersorchard.com/activities-recipes" target="_blank"><img class="img-responsive" src="images/kerchers/kerchers_mobile2.png" alt="Preview image of Kercher's Orchards inner page on mobile"></a>
+          </div>
+        </div> <!-- End Project 8 Summary -->
+
+        <div class="summary summary-9" data-project="project-9">
+          <div class="overview">
+            <p class="xsmall">Kercher's Orchards had a lot of information to share and needed a low-cost site to help draw visitors to their farm.</p>
+
+            <p class="xsmall">This festive site, built using the Wordpress Divi theme, showcases the client's activities and products and gives visitors all the information they need for a visit.</p>
+            <a class="button" href="http://www.columbussleep.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.columbussleep.com" target="_blank"><img class="img-responsive" src="images/columbus/columbus_lg.jpg" alt="Preview image of Columbus Sleep Consultants homepage"></a>
+            <a href="http://www.columbussleep.com/sleep-health-work/sleepiness-in-the-workplace" target="_blank"><img class="img-responsive" src="images/columbus/columbus_inner_lg.jpg" alt="Preview image of Columbus Sleep Consultants inner page"></a>
+            <a href="http://www.columbussleep.com/quizzes" target="_blank"><img class="img-responsive" src="images/columbus/columbus_quiz_lg.jpg" alt="Preview image of Columbus Sleep Consultants quizzes page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.columbussleep.com" target="_blank"><img class="img-responsive" src="images/columbus/columbus_mobile.png" alt="Preview image of Columbus Sleep Consultants homepage on mobile"></a>
+            <a href="http://www.columbussleep.com/sleep-disorders/children-and-sleep" target="_blank"><img class="img-responsive" src="images/columbus/columbus_mobile2.png" alt="Preview image of Columbus Sleep Consultants inner page on mobile"></a>
+            <a href="http://www.columbussleep.com/our-locations" target="_blank"><img class="img-responsive" src="images/columbus/columbus_mobile3.png" alt="Preview image of Columbus Sleep Consultants locations page on mobile"></a>
+          </div>
+        </div> <!-- End Project 9 Summary -->
+
+        <div class="summary summary-10" data-project="project-10">
+          <div class="overview">
+            <p class="xsmall">Kercher's Orchards had a lot of information to share and needed a low-cost site to help draw visitors to their farm.</p>
+
+            <p class="xsmall">This festive site, built using the Wordpress Divi theme, showcases the client's activities and products and gives visitors all the information they need for a visit.</p>
+            <a class="button" href="http://www.riders.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.riders.com" target="_blank"><img class="img-responsive" src="images/riders/riders_lg.jpg" alt="Preview image of Rider's Hobby Shop homepage"></a>
+            <a href="http://www.riders.com/departments/model-railroading" target="_blank"><img class="img-responsive" src="images/riders/riders_inner_lg.jpg" alt="Preview image of Rider's Hobby Shop inner page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.riders.com/departments/paint-tools" target="_blank"><img class="img-responsive" src="images/riders/riders_mobile.png" alt="Preview image of Rider's Hobby Shop inner page on mobile"></a>
+            <a href="http://www.riders.com/locations" target="_blank"><img class="img-responsive" src="images/riders/riders_mobile2.png" alt="Preview image of Rider's Hobby Shop locations page on mobile"></a>
+          </div>
+        </div> <!-- End Project 10 Summary -->
+
+        <div class="summary summary-11" data-project="project-11">
+          <div class="overview">
+            <p class="xsmall">Kercher's Orchards had a lot of information to share and needed a low-cost site to help draw visitors to their farm.</p>
+
+            <p class="xsmall">This festive site, built using the Wordpress Divi theme, showcases the client's activities and products and gives visitors all the information they need for a visit.</p>
+            <a class="button" href="http://www.buckeyediamondclub.com" target="_blank">View Live Site</a>
+            <p class="back">← Back</p>
+          </div>
+          <div class="desktop-view">
+            <a href="http://www.buckeyediamondclub.com" target="_blank"><img class="img-responsive" src="images/buckeye/buckeye_lg.jpg" alt="Preview image of Buckeye Diamond Baseball Club homepage"></a>
+            <a href="http://www.buckeyediamondclub.com/pros" target="_blank"><img class="img-responsive" src="images/buckeye/buckeye_pros_lg.jpg" alt="Preview image of Buckeye Diamond Baseball Club pros page"></a>
+            <a href="http://www.buckeyediamondclub.com/events" target="_blank"><img class="img-responsive" src="images/buckeye/buckeye_event_lg.jpg" alt="Preview image of Buckeye Diamond Baseball Club event page"></a>
+          </div>
+          <div class="mobile-view">
+            <a href="http://www.buckeyediamondclub.com" target="_blank"><img class="img-responsive" src="images/buckeye/buckeye_mobile.png" alt="Preview image of Buckeye Diamond Baseball Club homepage on mobile"></a>
+            <a href="http://www.buckeyediamondclub.com/donate" target="_blank"><img class="img-responsive" src="images/buckeye/buckeye_mobile2.png" alt="Preview image of Buckeye Diamond Baseball Club donate page on mobile"></a>
+            <a href="http://www.buckeyediamondclub.com/events" target="_blank"><img class="img-responsive" src="images/buckeye/buckeye_mobile3.png" alt="Preview image of Buckeye Diamond Baseball Club events page on mobile"></a>
+          </div>
+        </div> <!-- End Project 11 Summary -->
+        
+      </div> <!-- End summary container -->
+      <div class="project project-2" data-project="project-2">
+        <div class="project-inner">
+          <h3>Husqvarna Carolinas</h3>
         </div>
       </div>
-      <div class="row black">
-        <div id="main-img">
-          <div id="text-overlay">
-            <div id="title"><h1>Kara Anderson</h1></div>
-            <div id="subtitle"><p class="large">Web Designer & Front-End Developer</p></div>
-          </div>
-          <i class="fa fa-angle-down" id="arrow" aria-hidden="true"></i>
+      <div class="project project-3" data-project="project-3">
+        <div class="project-inner">
+          <h3>Mid-States Construction</h3>
         </div>
+      </div>
+      <div class="project project-4" data-project="project-4">
+        <div class="project-inner">
+          <h3>Young & Nichols</h3>
+        </div>
+      </div>
+      <div class="project project-5" data-project="project-5">
+        <div class="project-inner">
+          <h3>Seattle U Stories</h3>
+        </div>
+      </div>
+      <div class="project project-6" data-project="project-6">
+        <div class="project-inner">
+          <h3>Hegg Memorial Health Center</h3>
+        </div>
+      </div>
+      <div class="project project-7" data-project="project-7">
+        <div class="project-inner">
+          <h3>Williams Golf & Country Club</h3>
+        </div>
+      </div>
+      <div class="project project-8" data-project="project-8">
+        <div class="project-inner">
+          <h3>Kercher's Orchards</h3>
+        </div>
+      </div>
+      <div class="project project-9" data-project="project-9">
+        <div class="project-inner">
+          <h3>Columbus Sleep Consultants</h3>
+        </div>
+      </div>
+      <div class="project project-10" data-project="project-10">
+        <div class="project-inner">
+          <h3>Rider's Hobby Shop</h3>
+        </div>
+      </div>
+      <div class="project project-11" data-project="project-11">
+        <div class="project-inner">
+          <h3>OSU Buckeye Diamond Baseball Club</h3>
+        </div>
+      </div>
+      <!-- <div class="project project-12">
+        <h3>12</h3>
+      </div>
+      <div class="project project-13">
+        <h3>13</h3>
+      </div>
+      <div class="project project-14">
+        <h3>14</h3>
+      </div>
+      <div class="project project-15">
+        <h3>15</h3>
+      </div> -->
+
+    </div> <!-- End grid-container -->
+  </div> <!-- End work slider -->
+
+  <div class="slider slider-resume" id="resume">
+    <div class="title">
+      <h1 class="block">Resume</h1>
+      <div class="nav-container">
+        <ul class="nav inner-nav">
+          <li class="home"><a href="#home" class="nav-item">Home</a></li>
+          <li class="work"><a href="#work" class="nav-item">Work</a></li>
+          <li class="resume"><a href="#resume" class="nav-item active">Resume</a></li>
+          <li class="contact"><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="profile resume-section">
+        <h3>Profile</h3>
+        <p class="small">Motivated front-end web developer and designer with a background in marketing. I love designing and building awesome sites that bring new life to clients' businesses.
+        </p>
+      </div>
+      <div class="headshot resume-section">
+        <div class="img-container">
+          <img id="headshot" src="images/headshot.jpg" alt="Kara Anderson headshot">
+        </div>
+      </div>
+      <div class="connect resume-section">
+        <h3>About</h3>
+        <p class="small">Name: Kara Anderson<br>Location: Baltimore, Maryland</p>
+        <h3>Connect</h3>
+        <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a></p>
+        <div class="icons-container">
+          <div class="icon-outer">
+            <a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
+          </div>
+          <div class="icon-outer">
+            <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
+          </div>
+          <div class="icon-outer">
+            <a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience resume-section">
+<!--         <div class="icon-cont">
+          <i class="fa fa-briefcase" id="experience" aria-hidden="true"></i>
+        </div> -->
+        <h3>Experience</h3>
+        <article>
+          <h4>Web Designer & Front-End Developer at Compulse Integrated Marketing <em>(Baltimore, MD)</em></h4>
+          <p class="small"><em>July 2016–Present</em></p>
+          <ul class="small">
+            <li>Lead front-end development of custom Wordpress sites and landing pages using HTML, Bootstrap framework, Sass/CSS, jQuery, JavaScript, PHP, third-party APIs, Git and Gulp</li>
+            <li>Communicate with design/UX team and client throughout process to ensure great user experience is developed and client needs are met</li>
+            <li>Configure and customize plugins to add eCommerce, event registration and other functionality to sites</li>
+            <li>Work with development team to seamlessly integrate back-end</li>
+            <li>Practice company coding best practices and workflow/organization standards</li>
+            <li>Integrate content into CMS to allow for updates to be made easily by clients</li>
+          </ul>
+          <br>
+        </article>
+        <article>
+          <h4>Interactive Marketing Specialist at United Way of Central Maryland <em>(Baltimore, MD)</em></h4>
+          <p class="small"><em>August 2012–June 2016</em></p>
+          <ul class="small">
+            <li>Oversaw organization’s web marketing strategy by creating engaging content that drives users to action</li>
+            <li>Created and managed all content for WordPress site (uwcm.org), reported on traffic and analyze trends using Google Analytics</li>
+            <li>Assisted with site updates and debugging</li>
+            <li>Served as project manager for all web marketing projects, ensuring efficiency and consistently meeting tight deadlines</li>
+          </ul>
+          <br>
+        </article>
+        <article>
+          <h4>Marketing Consultant & Project Manager at MOS Creative <em>(Columbia, MD)</em></h4>
+          <p class="small"><em>April 2012–August 2012</em></p>
+          <ul class="small">
+            <li>Researched, developed and helped execute creative online marketing initiatives to help clients connect more effectively with their target market and generate more leads</li>
+            <li>Conducted thorough competitive and market analyses to understand the state of clients’ industries, analyzing strengths, weaknesses, opportunities and threats</li>
+            <li>Developed content to engage and convert leads to customers, leveraging social media, blogging, targeted email campaigns and search engine marketing</li>
+            <li>Developed and nurtured strong client relationships with open communication, constantly exchanging ideas and encouraging feedback</li>
+          </ul>
+          <br>
+        </article>
+        <article>
+          <h4>Instructor of English as a Second Language <em>(Jundiaí, São Paulo, Brazil)</em></h4>
+          <p class="small"><em>January 2011–March 2012</em></p>
+          <ul class="small">
+            <li>Managed classroom and in-company lessons for more than 15 groups of foreign language students</li>
+            <li>Created personal brand identity and carried out marketing activities to attract both individual students and large companies as customers</li>
+            <li>Gained experience targeting a foreign audience with different purchasing behavior and attitudes</li>
+            <li>Developed and maintained strong relationships with students by communicating effectively, anticipating customer wants and needs, and offering periodic promotions and incentives</li>
+          </ul>
+          <br>
+        </article>
+        <article>
+          <h4>Marketing Project Manager & Graphic Designer at ECI-Find New Markets <em>(Columbia, SC)</em></h4>
+          <p class="small"><em>September 2007–September 2010</em></p>
+          <ul class="small">
+            <li>Managed development of comprehensive branding and communications strategies for over 20 domestic and international companies while advancing internal goals of marketing company</li>
+            <li>Boosted client brand awareness and exposure by planning and implementing marketing, advertising, public relations and social media campaigns, working within tight budget constraints</li>
+            <li>Encouraged learning and development in the community by conducting social media and general marketing training sessions for local businesses</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="education resume-section">
+<!--         <div class="icon-cont">
+          <i class="fa fa-graduation-cap" id="education" aria-hidden="true"></i>
+        </div> -->
+        <h3>Education</h3>
+        <h4>Udacity <em>(April 2016–August 2016)</em></h4>
+        <p class="small">Nanodegree, Front-End Web Development</p>
+          <ul class="small">
+            <li>Online nanodegree program built by industry leaders, including Google, AT&T and GitHub</li>
+            <li>Complete a variety of projects focused on building mobile-first responsive websites from scratch</li>
+            <li>Advance knowledge of and experience with HTML, custom CSS, JavaScript and Bootstrap framework</li>
+          </ul>
+        <br>
+        <h4>University of South Carolina <em>(August 2005–August 2010)</em></h4>
+        <ul class="small">
+          <li>Bachelor of Science, Business Administration (Major: Marketing)</li>
+          <li>Bachelor of Arts, Journalism & Mass Communications (Major: Advertising)</li>
+          <li>GPA: 3.9</li>
+        </ul>
+        <br>
+        <h4>University of Hawaii at Manoa <em>(August 2008–December 2008)</em></h4>
+        <p class="small">National Student Exchange Program</p>
+      </div>
+
+      <div class="skills-title resume-section">
+<!--         <div class="icon-cont">
+          <i class="fa fa-wrench" id="technical" aria-hidden="true"></i>
+        </div> -->
+        <h3>Technical Expertise</h3>
+      </div>
+
+      <div class="skills-list-1 resume-section">
+        <h4>Professional Skillset</h4>
+        <ul class="small">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>Wordpress</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>JSON</li>
+          <li>Git</li>
+        </ul>
+      </div>
+
+      <div class="skills-list-2 resume-section">
+        <h4>Working Knowledge</h4>
+        <ul class="small">
+          <li>PHP</li>
+          <li>Gulp.js</li>
+          <li>Backbone.js</li>
+          <li>Google Maps API</li>
+        </ul>
+      </div>
+
+      <div class="skills-list-3 resume-section">
+        <h4>Tools</h4>
+        <ul class="small">
+          <li>Sublime Text</li>
+          <li>Bitbucket</li>
+          <li>Adobe Creative Cloud</li>
+          <li>Google Adwords & Analytics</li>
+          <li>Microsoft Office</li>
+          <li>Slack</li>
+        </ul>
+      </div>
+
+      <div class="volunteer resume-section">
+<!--         <div class="icon-cont">
+          <i class="fa fa-heart" id="volunteer" aria-hidden="true"></i>
+        </div> -->
+        <h3>Volunteer Experience</h3>
+        <h4>Court Appointed Special Advocates for Children (CASA) of Baltimore City <em>(January 2015–Present)</em></h4>
+        <p class="small">Serve as an advocate to represent the best interests of abused and neglected children in Baltimore City</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slider slider-contact" id="contact">
+    <div class="title">
+      <h1 class="block">Contact</h1>
+            <div class="nav-container">
+        <ul class="nav inner-nav">
+          <li class="home"><a href="#home" class="nav-item">Home</a></li>
+          <li class="work"><a href="#work" class="nav-item">Work</a></li>
+          <li class="resume"><a href="#resume" class="nav-item">Resume</a></li>
+          <li class="contact"><a href="#contact" class="nav-item active">Contact</a></li>
+        </ul>
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="text-block">
-            <h2>Sites that satisfy both the left and right brain.</h2>
-            <p class="large">After forking off from marketing on a new career path in web design and development, I've had a lot of fun building awesome sites from well-thought-out designs. The best part? Getting to help clients bring new life to their businesses. Check them out below.</p>
-          </div>
-        </div>
+      <p class="small">
+        Please feel free to reach out with questions regarding my portfolio or potential opportunities to work or learn together. Thank you!
+      </p>
+      <h3>Kara Anderson</h3>
+      <div class="icon-outer">
+        <a href="mailto:karashirl@gmail.com">
+          <i class="fa fa-envelope social-icon" aria-hidden="true"></i>
+          <p class="small">Email: karashirl@gmail.com</p>
+        </a>
+      </div> 
+      <div class="icon-outer">
+        <a href="https://github.com/karashirl" target="_blank">
+          <i class="fa fa-github social-icon" aria-hidden="true"></i>
+          <p class="small">Github</p> 
+        </a>
+      </div>
+      <div class="icon-outer">
+        <a href="https://www.linkedin.com/in/kanderson4" target="_blank">
+          <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
+        <p class="small">LinkedIn</p> 
+      </a>
+      </div>
+      <div class="icon-outer">
+        <a href="https://twitter.com/karashirl" target="_blank">
+          <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+        <p class="small">Twitter</p>
+      </a>
       </div>
     </div>
-    <svg class="diagonal lt-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="0 0 100 10 0 10" />
-    </svg>
-    <div class="container-color">
-      <a id="projects"></a>
-      <div class="container projects">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-block">
-              <h2>Professional Projects</h2>
-              <p class="large">Below are a collection of sites I've built (and some designed) from scratch, with customized Wordpress themes and using Bootstrap framework.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="project-blurb" id="dryangler"><a href="dryangler.html"><img class="img-responsive darken" src="images/dryangler/dryangler_sm.jpg" srcset="images/dryangler/dryangler_sm.jpg 500w, images/dryangler/dryangler_lg.jpg 992w" alt="Preview image of Dry Angler Apparel site"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Dry Angler Apparel eCommerce Site (Front-End Development)</h3>
-              <p class="small">Custom eCommerce site for online retailer built using WooCommerce and Pods framework.</p><br>
-              <a class="button" href="dryangler.html">View Details</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="project-blurb" id="husqvarna"><a href="husqvarna.html"><img class="img-responsive darken" src="images/husqvarna/husqvarna_lg.jpg" srcset="images/husqvarna/husqvarna_sm.jpg 500w, images/husqvarna/husqvarna_lg.jpg 992w" alt="Preview image of Husqvarna landing page"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Husqvarna Carolinas Landing Page (Front-End Development)</h3>
-              <p class="small">Custom landing page for leading outdoor power equipment company built using Google Maps API, Backbone.js and Pods framework.</p><br>
-              <a class="button" href="husqvarna.html">View Details</a>
-            </div>
-          </div>
-        </div> <!-- End Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <div class="project-blurb" id="midstates"><a href="midstates.html"><img class="img-responsive darken" src="images/midstates/midstates_sm.jpg" srcset="images/midstates/midstates_sm.jpg 500w, images/midstates/midstates_lg.jpg 992w" alt="Preview image of Mid-States Construction site"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Mid-States Construction Site (Front-End Development)</h3>
-              <p class="small">Custom site for construction company featuring a project portfolio built using a customized Wordpress theme.</p><br>
-              <a class="button" href="midstates.html">View Details</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="project-blurb" id="yn"><a href="yn.html"><img class="img-responsive darken" src="images/yn/young_nichols_sm.jpg" srcset="images/yn/young_nichols_sm.jpg 500w, images/yn/young_nichols_lg.jpg 992w" alt="Preview image of Young & Nichols site"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Law Offices of Young & Nichols Site (Front-End Development)</h3>
-              <p class="small">Custom site for personal injury law firm built using a customized Wordpress theme.</p><br>
-              <a class="button" href="yn.html">View Details</a>
-            </div>
-          </div>
-        </div> <!-- End Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <div class="project-blurb" id="seattleu"><a href="seattleu.html"><img class="img-responsive darken" src="images/seattleu/seattleu_sm.jpg" srcset="images/seattleu/seattleu_sm.jpg 500w, images/seattleu/seattleu_lg.jpg 992w" alt="Preview image of Seattle U Stories landing page"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Seattle U Stories Landing Page (Front-End Development)</h3>
-              <p class="small">Custom landing page/blog for Seattle University's Stories campaign featuring custom video player module built using Pods framework and Backbone.js.</p><br>
-              <a class="button" href="seattleu.html">View Details</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="project-blurb" id="hegg"><a href="hegg.html"><img class="img-responsive darken" src="images/hegg/hegg_sm.jpg" srcset="images/hegg/hegg_sm.jpg 500w, images/hegg/hegg_lg.jpg 992w" alt="Preview image of Hegg Memorial Health Center site"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Hegg Memorial Health Center Site (Front-End Development)</h3>
-              <p class="small">Custom site for non-profit health center built using a customized Wordpress theme.</p><br>
-              <a class="button" href="hegg.html">View Details</a>
-            </div>
-          </div>
-        </div> <!-- End Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <div class="project-blurb" id="williams"><a href="williams.html"><img class="img-responsive darken" src="images/williams/williams_sm.jpg" srcset="images/williams/williams_sm.jpg 500w, images/williams/williams_lg.jpg 992w" alt="Preview image of Williams Golf & Country Club site"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Williams Golf & Country Club Events Site (Design & Development)</h3>
-              <p class="small">Template site for golf and country club built using Wordpress Divi theme.</p><br>
-              <a class="button" href="williams.html">View Details</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="project-blurb" id="kerchers"><a href="kerchers.html"><img class="img-responsive darken" src="images/kerchers/kerchers_sm.jpg" srcset="images/kerchers/kerchers_sm.jpg 500w, images/kerchers/kerchers_lg.jpg 992w" alt="Preview image of Kercher's Orchards site"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Kercher's Orchards Site (Front-End Development)</h3>
-              <p class="small">Template site for orchard and farm market built using Wordpress Divi theme.</p><br>
-              <a class="button" href="kerchers.html">View Details</a>
-            </div>
-          </div>
-        </div> <!-- End Row -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-block">
-              <h2>Personal/Academic Projects</h2>
-              <p class="large">Some of my earlier projects built as part of my Udacity Nanodegree and just for fun.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="project-blurb" id="map-proj"><a href="neighborhood-map-project/index.html" target="_blank"><img class="img-responsive darken" src="images/neighborhood_map_sm.jpg" srcset="images/neighborhood_map_sm.jpg 500w, images/neighborhood_map_lg.jpg 992w" alt="Preview image of interactive map project"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Interactive Neighborhood Map (Design & Development)</h3>
-              <p class="small">An interactive map of popular locations in my neighborhood built using Knockout.js and Google Maps and Foursquare APIs.</p><br>
-              <a class="button" href="neighborhood-map-project/index.html">VIEW</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="project-blurb" id="bmorehoods"><a href="BaltimoreNeighborhoods/index.html" target="_blank"><img class="img-responsive darken" src="images/baltimore_neighborhoods_sm.jpg" srcset="images/baltimore_neighborhoods_sm.jpg 500w, images/baltimore_neighborhoods_lg.jpg 992w" alt="Preview image of Baltimore neighborhoods project"></a></div>
-            <div class="col-md-12 summary">
-              <h3>Neighborhoods of Baltimore (Design & Development)</h3>
-              <p class="small">A responsive page built from scratch featuring six Baltimore neighborhoods. Transitions were created with JavaScript and CSS.</p><br>
-              <a class="button" href="BaltimoreNeighborhoods/index.html">VIEW</a>
-            </div>
-          </div>
-        </div> <!-- End Row -->
-      </div>
-      <div class="row">
-        <a id="resume"></a>
-        <svg class="diagonal white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-          <polygon points="100 0 100 10 0 10" />
-        </svg>
-      </div> <!-- End Row -->
-    </div> <!-- End Container -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container">
-          <div class="col-md-12">
-            <h2 class="resume-heading2">Résumé</h2>
-            <hr>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="container pad-bottom">
-          <div class="col-md-4 col-sm-12 col-xs-12">
-            <h3 class="resume-heading3">PROFILE</h3>
-            <p class="small">Motivated front-end web developer and designer with a background in marketing. I love designing and building awesome sites that bring new life to clients' businesses.
-            </p>
-          </div>
-          <div class="col-md-4 col-md-push-4 col-sm-6 col-xs-6" id="about">
-            <h3 class="resume-heading3">ABOUT</h3>
-            <p class="small">Name: Kara Anderson<br>Location: Baltimore, Maryland</p>
-            <h3 class="resume-heading3">CONNECT</h3>
-            <p class="small">Email: <a href="mailto:karashirl@gmail.com">karashirl@gmail.com</a></p>
-            <div class="social-resume">
-              <div class="social-int">
-                <a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
-              </div>
-              <div class="social-int">
-                <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
-              </div>
-              <div class="social-int">
-                <a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-md-pull-4 col-sm-6 col-xs-6" id="headshot">
-            <img id="headshot-image" src="images/headshot.jpg" alt="Kara Anderson headshot">
-          </div>
-        </div>
-        <svg class="diagonal lt-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="0 0 100 10 0 10" />
-        </svg>
-      </div>
-      <div class="row row-blue">
-        <div class="container">
-          <div class="row">
-            <div class="icon-cont">
-              <i class="fa fa-briefcase resume-icon" id="experience" aria-hidden="true"></i>
-            </div>
-            <div class="title-cont">
-              <h3 class="resume-heading3">EXPERIENCE</h3>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <article>
-              <h4>Web Designer & Front-End Developer at Compulse Integrated Marketing <em>(Baltimore, MD)</em></h4>
-              <p class="small"><em>July 2016–Present</em></p>
-              <ul class="small">
-                <li>Lead front-end development of custom Wordpress sites and landing pages using HTML, Bootstrap framework, Sass/CSS, jQuery, JavaScript, PHP, third-party APIs, Git and Gulp</li>
-                <li>Communicate with design/UX team and client throughout process to ensure great user experience is developed and client needs are met</li>
-                <li>Configure and customize plugins to add eCommerce, event registration and other functionality to sites</li>
-                <li>Work with development team to seamlessly integrate back-end</li>
-                <li>Practice company coding best practices and workflow/organization standards</li>
-                <li>Integrate content into CMS to allow for updates to be made easily by clients</li>
-              </ul>
-              <br>
-            </article>
-            <article>
-              <h4>Interactive Marketing Specialist at United Way of Central Maryland <em>(Baltimore, MD)</em></h4>
-              <p class="small"><em>August 2012–June 2016</em></p>
-              <ul class="small">
-                <li>Oversaw organization’s web marketing strategy by creating engaging content that drives users to action</li>
-                <li>Created and managed all content for WordPress site (uwcm.org), reported on traffic and analyze trends using Google Analytics</li>
-                <li>Assisted with site updates and debugging</li>
-                <li>Served as project manager for all web marketing projects, ensuring efficiency and consistently meeting tight deadlines</li>
-              </ul>
-              <br>
-            </article>
-            <article>
-              <h4>Marketing Consultant & Project Manager at MOS Creative <em>(Columbia, MD)</em></h4>
-              <p class="small"><em>April 2012–August 2012</em></p>
-              <ul class="small">
-                <li>Researched, developed and helped execute creative online marketing initiatives to help clients connect more effectively with their target market and generate more leads</li>
-                <li>Conducted thorough competitive and market analyses to understand the state of clients’ industries, analyzing strengths, weaknesses, opportunities and threats</li>
-                <li>Developed content to engage and convert leads to customers, leveraging social media, blogging, targeted email campaigns and search engine marketing</li>
-                <li>Developed and nurtured strong client relationships with open communication, constantly exchanging ideas and encouraging feedback</li>
-              </ul>
-              <br>
-            </article>
-            <article>
-              <h4>Instructor of English as a Second Language <em>(Jundiaí, São Paulo, Brazil)</em></h4>
-              <p class="small"><em>January 2011–March 2012</em></p>
-              <ul class="small">
-                <li>Managed classroom and in-company lessons for more than 15 groups of foreign language students</li>
-                <li>Created personal brand identity and carried out marketing activities to attract both individual students and large companies as customers</li>
-                <li>Gained experience targeting a foreign audience with different purchasing behavior and attitudes</li>
-                <li>Developed and maintained strong relationships with students by communicating effectively, anticipating customer wants and needs, and offering periodic promotions and incentives</li>
-              </ul>
-              <br>
-            </article>
-            <article>
-              <h4>Marketing Project Manager & Graphic Designer at ECI-Find New Markets <em>(Columbia, SC)</em></h4>
-              <p class="small"><em>September 2007–September 2010</em></p>
-              <ul class="small">
-                <li>Managed development of comprehensive branding and communications strategies for over 20 domestic and international companies while advancing internal goals of marketing company</li>
-                <li>Boosted client brand awareness and exposure by planning and implementing marketing, advertising, public relations and social media campaigns, working within tight budget constraints</li>
-                <li>Encouraged learning and development in the community by conducting social media and general marketing training sessions for local businesses</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-        <svg class="diagonal white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-          <polygon points="100 0 100 10 0 10" />
-        </svg>
-      </div>
-      <div class="row pad-top">
-        <div class="container pad-bottom">
-          <div class="row">
-            <div class="icon-cont">
-              <i class="fa fa-graduation-cap resume-icon" id="education" aria-hidden="true"></i>
-            </div>
-            <div class="title-cont">
-              <h3 class="resume-heading3">EDUCATION</h3>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <h4>Udacity <em>(April 2016–August 2016)</em></h4>
-            <p class="small">Nanodegree, Front-End Web Development</p>
-              <ul class="small">
-                <li>Online nanodegree program built by industry leaders, including Google, AT&T and GitHub</li>
-                <li>Complete a variety of projects focused on building mobile-first responsive websites from scratch</li>
-                <li>Advance knowledge of and experience with HTML, custom CSS, JavaScript and Bootstrap framework</li>
-              </ul>
-            <br>
-            <h4>University of South Carolina <em>(August 2005–August 2010)</em></h4>
-            <ul class="small">
-              <li>Bachelor of Science, Business Administration (Major: Marketing)</li>
-              <li>Bachelor of Arts, Journalism & Mass Communications (Major: Advertising)</li>
-              <li>GPA: 3.9</li>
-            </ul>
-            <br>
-            <h4>University of Hawaii at Manoa <em>(August 2008–December 2008)</em></h4>
-            <p class="small">National Student Exchange Program</p>
-          </div>
-        </div>
-        <svg class="diagonal lt-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-          <polygon points="0 0 100 10 0 10" />
-        </svg>
-      </div>
-      <div class="row row-blue">
-        <div class="container">
-          <div class="row">
-            <div class="icon-cont">
-              <i class="fa fa-wrench resume-icon" id="technical" aria-hidden="true"></i>
-            </div>
-            <div class="title-cont">
-              <h3 class="resume-heading3">TECHNICAL EXPERTISE</h3>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h4>Professional Skillset</h4>
-            <ul class="small">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Sass</li>
-              <li>Wordpress</li>
-              <li>Bootstrap</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>JSON</li>
-              <li>Git</li>
-            </ul>
-            <h4>Working Knowledge</h4>
-            <ul class="small">
-              <li>PHP</li>
-              <li>Gulp.js</li>
-              <li>Backbone.js</li>
-              <li>Google Maps API</li>
+  </div>
 
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h4>Tools</h4>
-            <ul class="small">
-              <li>Sublime Text</li>
-              <li>Bitbucket</li>
-              <li>Adobe Creative Cloud</li>
-              <li>Google Adwords & Analytics</li>
-              <li>Microsoft Office</li>
-              <li>Slack</li>
-            </ul>
-          </div>
-        </div>
-        <svg class="diagonal white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-          <polygon points="100 0 100 10 0 10" />
-        </svg>
-      </div>
-      <div class="row pad-top pad-bottom">
-        <div class="container pad-bottom">
-          <div class="row">
-            <div class="icon-cont">
-              <i class="fa fa-heart resume-icon" id="volunteer" aria-hidden="true"></i>
-            </div>
-            <div class="title-cont">
-              <h3 class="resume-heading3">VOLUNTEER EXPERIENCE</h3>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <h4>Court Appointed Special Advocates for Children (CASA) of Baltimore City <em>(January 2015–Present)</em></h4>
-            <p class="small">Serve as an advocate to represent the best interests of abused and neglected children in Baltimore City</p>
-            <br>
-            <h4>United Way of Central Maryland <em>(August 2012–Present)</em></h4>
-            <p class="small">Volunteer at local food banks, farms and schools, and annual Project Homeless Connect event</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row" id="footer">
-        <div class="col-md-12">
-          <p>Follow me:</p>
-          <div class="social-footer">
-            <div class="social-int">
-              <a href="https://github.com/karashirl" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
-            </div>
-            <div class="social-int">
-              <a href="https://www.linkedin.com/in/kanderson4" target="_blank"><i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
-            </div>
-            <div class="social-int">
-              <a href="https://twitter.com/karashirl" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
   <script src="js/jquery-1.12.3.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html>

@@ -65,6 +65,7 @@ p.small, ul.small li {
 p.xsmall {
     font-size: 1.15em;
     line-height: 1.7em;
+    margin: 0 0 20px;
 }
 
 ul {
@@ -257,10 +258,12 @@ hr {
 
 #text-overlay {
     width: 100%;
-    top: calc(50vh - 57.5px);
+    top: 50%;
+    transform: translate(0, -50%);
     text-align: center;
     color: white;
     position: absolute;
+    padding: 0 30px;
 }
 
 #title {
@@ -472,15 +475,19 @@ hr {
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
+    position: relative;
+    height: 40vh;
 }
 
 .project #text-overlay {
-    padding: calc(12vh + 95px) 20px 12vh 20px;
-    position: static;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: calc(50% + 35px);
+    padding: 0 25px;
 }
 
 .project #text-overlay h2 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     margin: 0;
 }
 
@@ -705,10 +712,6 @@ hr {
     }
 
     /* Internal Project Pages */
-
-    .project #text-overlay h2 {
-        padding-bottom: 5px;
-    }
 
     .project .mobile img {
         width: 50%;

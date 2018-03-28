@@ -44,20 +44,20 @@ function headerAnimate() {
         mainImg.css( { opacity : (1 / distanceY) * 200 - 0.1 } );
     }
 
-    if (winWidth > 767) {
-        title.css( { marginRight : distanceY } );
-        title.css( { marginBottom : (distanceY / 4) } );
-        subtitle.css( { marginLeft : distanceY } );
-        subtitle.css( { marginTop : (distanceY / 4) } );
-    }
+    // if (winWidth > 767) {
+    //     title.css( { marginRight : distanceY } );
+    //     title.css( { marginBottom : (distanceY / 4) } );
+    //     subtitle.css( { marginLeft : distanceY } );
+    //     subtitle.css( { marginTop : (distanceY / 4) } );
+    // }
 
-    if (title.css('opacity') == 0) {
-        title.css( { 'display' : 'none' } );
-        subtitle.css( { 'display' : 'none'  } );
-    } else {
-        title.css( { 'display' : 'block' } );
-        subtitle.css( { 'display' : 'block'  } );
-    }
+    // if (title.css('opacity') == 0) {
+    //     title.css( { 'display' : 'none' } );
+    //     subtitle.css( { 'display' : 'none'  } );
+    // } else {
+    //     title.css( { 'display' : 'block' } );
+    //     subtitle.css( { 'display' : 'block'  } );
+    // }
 }
 
 // Fade in images when visible

@@ -281,7 +281,8 @@ hr {
     color: white;
     font-size: 4em;
     text-align: center;
-    top: calc(100% - 80px);
+    bottom: 0;
+    padding-bottom: 20px;
     position: absolute;
     animation: bounce 1.5s infinite ease-in-out;
 }

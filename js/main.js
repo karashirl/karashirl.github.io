@@ -41,7 +41,7 @@ function headerAnimate() {
     if (distanceY > 0) {
         title.css( { opacity : (1 / distanceY) * 200 - 0.4 } );
         subtitle.css( { opacity : (1 / distanceY) * 200 - 0.4 } );
-        mainImg.css( { opacity : (1 / distanceY) * 200 - 0.25 } );
+        mainImg.css( { opacity : (1 / distanceY) * 200 - 0.1 } );
     }
 
     if (winWidth > 767) {

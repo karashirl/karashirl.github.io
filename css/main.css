@@ -1,7 +1,7 @@
 /* MAIN STYLES */
 
 * {
-    font-family: "Lato", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -21,7 +21,8 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
@@ -36,10 +37,15 @@ h2 {
 
 h3 {
     font-size: 1.4em;
+    margin-bottom: 20px;
 }
 
 h4 {
-    font-size: 1.3em
+    font-size: 1.3em;
+}
+
+h4 * {
+    font-family: 'Karla', sans-serif;
 }
 
 p {
@@ -53,7 +59,7 @@ p.large {
 
 p.small, ul.small li {
     font-size: 16px;
-    line-height: 1.4em;
+    line-height: 1.6em;
 }
 
 p.xsmall {
@@ -89,6 +95,7 @@ hr {
     padding: 9px 16px;
     display: inline-block;
     text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
 }
 
 .button:hover, .button:focus {
@@ -192,7 +199,7 @@ hr {
     text-decoration: none;
     padding-left: 40px;
     padding-right: 40px;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 .nav-item:hover {
@@ -258,6 +265,12 @@ hr {
 
 #title {
     font-size: 1.3em;
+    font-weight: bold;
+}
+
+#title h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 #arrow {
@@ -304,6 +317,17 @@ hr {
 
 .project-blurb {
     opacity: 0;
+}
+
+.project-title {
+    margin-bottom: 0;
+}
+
+.project-subtitle {
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 /* RESUME */
@@ -393,11 +417,6 @@ hr {
     font-size: 26px;
     border-radius: 50%;
     padding: 12px;
-    -moz-transition: all .2s;
-    -webkit-transition: all .2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all .2s;
-    transition: all .2s;
 }
 
 .title-cont h3 {
@@ -545,17 +564,17 @@ hr {
     h3 {
         font-size: 1.5em;
     }
-
+/*
     p.small, ul.small li {
-        font-size: 18px;
-    }
+        font-size: 1.1em;
+    }*/
 
     ul li {
         padding-bottom: 2px;
     }
 
     p.large {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     ul {
@@ -600,6 +619,10 @@ hr {
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0);
         transform: translate(0, 0);
+    }
+
+    #title h1 {
+        letter-spacing: 6px;
     }
 
     .text-block {
@@ -669,15 +692,6 @@ hr {
 
     .diagonal {
         height: 90px;
-    }
-
-    .resume-icon:hover {
-        font-size: 34px;
-        padding: 15px;
-    }
-
-    #education:hover {
-        padding: 15px 10.15px;
     }
 
     .social-icon:hover {

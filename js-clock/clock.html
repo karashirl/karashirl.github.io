@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS + JS Clock</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container-main">
+		<div class="clock">
+			<div class="hand minutes"></div>
+			<div class="hand hours"></div>
+			<div class="hand seconds"></div>
+		</div>
+	</div>
+	<script>
+		const secondHand = document.querySelector('.seconds');
+		const minuteHand = document.querySelector('.minutes');
+		const hourHand = document.querySelector('.hours');
+
+		function setDate() {
+			const now = new Date();
+
+			function checkReset(increment, incrementHand) {
+				if (increment === 0) {
+					incrementHand.style.transition = `0s`;
+				} else {
+					incrementHand.style.transition = `0.05s`;
+					incrementHand.style.transitionTimingFunction = `cubic-bezier(0.42, 0, 0, 2.66)`;
+				};
+			}
+
+			const seconds = now.getSeconds();
+			const secondsDegrees = ((seconds / 60) * 360) + 90;
+			checkReset(seconds, secondHand);
+			secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+			const minutes = now.getMinutes();
+			const minutesDegrees = ((minutes / 60) * 360) + 90;
+			checkReset(minutes, minuteHand);
+			minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+			const hours = now.getHours();
+			const hoursDegrees = ((hours / 12) * 360) + 90;
+			checkReset(hours, hourHand);
+			hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+		};
+
+		setInterval(setDate, 1000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+* { box-sizing: border-box }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main Styles */
+
+.container-main {
+	width: 100vw;
+	height: 100vh;
+	background: url(background.jpg);
+	background-size: cover;
+}
+
+.clock {
+	height: 46vw;
+	width: 46vw;
+	margin: 0 auto;
+	border: #c0df16 solid 3vw;
+	border-radius: 50%;
+	position: relative;
+	top: calc(50% - 23vw);
+	background: rgba(255,255,255,0.45);
+}
+
+.hand {
+	position: absolute;
+	top: calc(50% - 1vw);
+	right: 50%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition: 0.05s;
+	transition-timing-function: cubic-bezier(0.42, 0, 0, 2.66);
+}
+
+.seconds {
+	height: 7px;
+	width: calc(50% - 9.5vw);
+	background: #666;
+}
+
+.minutes {
+	height: 15px;
+	width: calc(50% - 3vw);
+	background: #333;
+}
+
+.hours {
+	height: 20px;
+	width: calc(50% - 7vw);
+	background: #000;
+}

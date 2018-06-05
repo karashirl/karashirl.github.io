@@ -54,13 +54,15 @@ table {
 }
 
 .clock {
-	height: 46vw;
-	width: 46vw;
+	height: 80vh;
+	width: 80vh;
+	max-width: 80vw;
+	max-height: 80vw;
 	margin: 0 auto;
-	border: #c0df16 solid 3vw;
+	border: #c0df16 solid 2.5vw;
 	border-radius: 50%;
 	position: relative;
-	top: calc(50% - 23vw);
+	top: calc(50% - 40vh);
 	background: rgba(255,255,255,0.45);
 }
 

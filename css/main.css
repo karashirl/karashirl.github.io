@@ -516,6 +516,11 @@ hr {
     margin: 0 auto;
 }
 
+/* SBD Marketing Jobs */
+.sbdmarketing .header-img {
+    background-image: url('images/sbdmarketing.jpg');
+}
+
 /* Dry Angler */
 .dryangler .header-img {
     background-image: url('images/dryangler.jpg');
